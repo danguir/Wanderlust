@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:/Users/Cruci/Documents/NetBeansProjects/Wanderlust/app/config/routing_dev.yml'
