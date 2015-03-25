@@ -613,7 +613,7 @@ class appDevDebugProjectContainer extends Container
         $b = new \Doctrine\DBAL\Configuration();
         $b->setSQLLogger($a);
 
-        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => NULL, 'dbname' => 'symfony', 'user' => 'root', 'password' => NULL, 'charset' => 'UTF8', 'driverOptions' => array()), $b, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), array());
+        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => NULL, 'dbname' => 'wanderlust', 'user' => 'root', 'password' => NULL, 'charset' => 'UTF8', 'driverOptions' => array()), $b, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), array());
     }
 
     /**
@@ -3020,6 +3020,7 @@ class appDevDebugProjectContainer extends Container
         $instance->addPath('C:\\Users\\Cruci\\Documents\\NetBeansProjects\\Wanderlust\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\TwigBundle/Resources/views', 'Twig');
         $instance->addPath('C:\\Users\\Cruci\\Documents\\NetBeansProjects\\Wanderlust\\vendor\\symfony\\swiftmailer-bundle\\Symfony\\Bundle\\SwiftmailerBundle/Resources/views', 'Swiftmailer');
         $instance->addPath('C:\\Users\\Cruci\\Documents\\NetBeansProjects\\Wanderlust\\vendor\\doctrine\\doctrine-bundle\\Doctrine\\Bundle\\DoctrineBundle/Resources/views', 'Doctrine');
+        $instance->addPath('C:\\Users\\Cruci\\Documents\\NetBeansProjects\\Wanderlust\\src\\Site\\PagesBundle/Resources/views', 'Pages');
         $instance->addPath('C:\\Users\\Cruci\\Documents\\NetBeansProjects\\Wanderlust\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views', 'WebProfiler');
         $instance->addPath('C:\\Users\\Cruci\\Documents\\NetBeansProjects\\Wanderlust\\vendor\\sensio\\distribution-bundle\\Sensio\\Bundle\\DistributionBundle/Resources/views', 'SensioDistribution');
         $instance->addPath('C:/Users/Cruci/Documents/NetBeansProjects/Wanderlust/app/Resources/views');
@@ -3506,6 +3507,7 @@ class appDevDebugProjectContainer extends Container
                 'AsseticBundle' => 'Symfony\\Bundle\\AsseticBundle\\AsseticBundle',
                 'DoctrineBundle' => 'Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle',
                 'SensioFrameworkExtraBundle' => 'Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle',
+                'PagesBundle' => 'Site\\PagesBundle\\PagesBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
                 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle',
                 'SensioGeneratorBundle' => 'Sensio\\Bundle\\GeneratorBundle\\SensioGeneratorBundle',
@@ -3515,7 +3517,7 @@ class appDevDebugProjectContainer extends Container
             'database_driver' => 'pdo_mysql',
             'database_host' => '127.0.0.1',
             'database_port' => NULL,
-            'database_name' => 'symfony',
+            'database_name' => 'wanderlust',
             'database_user' => 'root',
             'database_password' => NULL,
             'mailer_transport' => 'smtp',
@@ -3944,8 +3946,8 @@ class appDevDebugProjectContainer extends Container
             ),
             'assetic.java.bin' => 'C:\\ProgramData\\Oracle\\Java\\javapath\\java.EXE',
             'assetic.node.bin' => '/usr/bin/node',
-            'assetic.ruby.bin' => '/usr/bin/ruby',
-            'assetic.sass.bin' => '/usr/bin/sass',
+            'assetic.ruby.bin' => 'C:\\Ruby22-x64\\bin\\ruby.EXE',
+            'assetic.sass.bin' => 'C:\\Ruby22-x64\\bin\\sass.BAT',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.twig_extension.functions' => array(
 

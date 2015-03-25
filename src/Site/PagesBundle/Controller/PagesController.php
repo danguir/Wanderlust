@@ -9,5 +9,5 @@ class PagesController extends Controller
     public function indexAction()
     {
         return $this->render('PagesBundle::index.html.twig');
-    }
+    }          
 }
