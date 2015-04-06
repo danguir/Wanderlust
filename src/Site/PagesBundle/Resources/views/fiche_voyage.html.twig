@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Wanderlust</title>
+
+    <!-- css-->
+    <!--<link rel="stylesheet" href="{{ asset('css/bootstrap.') }}" />
+<link rel="stylesheet" href="{{ asset('css/carousel.css') }}" />-->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+
+    <!-- fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/modernizer.js') }}"></script>
+    
+</head>
+
+
+<body>
+    <div id="page">
+        <div id="fiche_voyage" class="groenland">
+            <nav class="navbar navbar-fixed-top desktop">
+                <a href="#" class="logo"></a>
+                <ul>
+                    <li class="uppercase"><a href="#" class="no_bg">accueil</a>
+                    </li>
+                    <li class="uppercase"><a href="#">voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="#">carnets de voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="#">actualités</a>
+                    </li>
+                    <li class="uppercase"><a href="#">contact</a>
+                    </li>
+                    <li class="uppercase"><a href="{{ path('connexion_utilisateur') }}" class="btn_connexion no_bg">connexion</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+
+            <nav class="navbar navbar-fixed-top mobile">
+                <a href="#menu" id="toggle"><span></span></a>
+                <div class="clearfix"></div>
+                <ul>
+                    <li class="uppercase"><a href="#" class="no_bg">accueil</a>
+                    </li>
+                    <li class="uppercase"><a href="#">voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="#">carnets de voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="#">actualités</a>
+                    </li>
+                    <li class="uppercase"><a href="#">contact</a>
+                    </li>
+                    <li class="uppercase"><a href="#" class="btn_connexion no_bg">connexion</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+
+            <header>
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <a href="#contenu_voyage" class="fleche_bottom">
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+
+                    <!-- Indicators -->
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active"> <img src="{{ asset('images/bg_slide_groenland.jpg') }}" alt="First slide" style="width:100%;">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>GROËNLAND</h1>
+                                    <p class="txt_grey size_23 font-light">UNE SEMAINE CHEZ LES INUITS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item"> <img src="{{ asset('images/bg_slide_groenland_02.jpg') }}" alt="First slide" style="width:100%;">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>GROËNLAND</h1>
+                                    <p class="txt_grey size_23 font-light">
+                                        UN MOMENT INOUBLIABLE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item"> <img src="{{ asset('images/bg_slide_groenland_03.jpg') }}" alt="First slide" style="width:100%;">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>GROËNLAND</h1>
+                                    <p class="txt_grey size_23 font-light">
+                                        UN PAYS O&Ugrave; LA NEIGE EST REINE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- contenu voyage -->
+            <div class="content" id="contenu_voyage">
+                <div class="block_left col-md-8 col-xs-12">
+                    <div class="container_description_voyage">
+                        <span class="uppercase bold txt_yellow size_20 title_voyage">
+								GROËNLAND : passez une semaine chez les inuits
+							</span>
+                        <br/>
+                        <span class="white size_18 date-depart">
+								<i class="fa fa-calendar size_23"></i>
+								<span> Du 21 au 27 Septembre 2015</span>
+                        </span>
+
+                        <span class="white size_18 nombre-groupe">
+								<i class="fa fa-users size_23"></i>
+								<span>8 personnes</span>
+                        </span>
+                        <p class="description_voyage white font-light">
+                            Venez vivre 7 jours au coeur même du groënland, au côté d’une famille d’inuit. Chasser le poisson, créer des vêtements chauds, construire un igloo et participer à la vie du village seront vos activités principales durant ce séjour.
+                            <br/>
+                            <br/> Vous découvrirez la culture et les traditions locales qui guident ce peuple millénaire. Ces paysages à la force boulversante où la glace est reine et où la neige est omniprésente vont vous enchanter. Vous aurez peut être même la chance de voir des aurores boréales !
+                            <br/>
+                            <br/> Alors gardez votre sang froid et préparez vous plutôt à vivre une expérience «inuit» !
+                        </p>
+                        <div class="clearfix"></div>
+                        <div class="vignettes_galerie col-md-12 col-xs-12">
+                            <img src="{{ asset('images/vignette_01.jpg') }}" alt="" title="" />
+                            <img src="{{ asset('images/vignette_02.jpg') }}" alt="" title="" />
+                            <img src="{{ asset('images/vignette_03.jpg') }}" alt="" title="" />
+                            <img src="{{ asset('images/vignette_01.jpg') }}" alt="" title="" />
+                            <img src="{{ asset('images/vignette_02.jpg') }}" alt="" title="" />
+                            <img src="{{ asset('images/vignette_03.jpg') }}" alt="" title="" />
+
+                        </div>
+                        <div class="clearfix"></div>
+                        <a href="#" target="_blank" class="white size_20 font-light btn_galerie">
+                            <i class="fa fa-camera"></i>
+                            <span>Voir la galerie</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 block_right">
+                    <div class="pays_date_meteo">
+                        <span class="txt_yellow size_30 bold">
+							GROËNLAND
+						</span>
+                        <span id="date_voyage" class="white size_14 italic">
+							[11 Mars 2015]
+						</span>
+                        <div class="clearfix"></div>
+                        <img src="{{ asset('images/symbole_soleil.png') }}" alt="" title="" class="symbole" />
+                        <span id="temperature_pays" class="bold txt_yellow size_30">-21°</span>
+                        <div class="clearfix"></div>
+                        <p class="soleil_horaires size_14 txt_yellow">
+                            <span class="element_left">Humidité</span>
+                            <span id="heure_leve_soleil" class="white element_right">85%</span>
+                            <br/>
+                            <span class="element_left">Vent</span>
+                            <span id="heure_couche_soleil" class="white element_right">
+								31km/h
+							</span>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <img src="{{ asset('images/groenland_map.png') }}" alt="" class="pays_map" />
+                    <ul class="details_pays size_14 txt_yellow element_left">
+                        <li>Capitale </li>
+                        <li>Superficie</li>
+                        <li>Population</li>
+                        <li>Devise</li>
+                        <li>Décalage horaire</li>
+                        <li>Langue</li>
+                    </ul>
+                    <ul class="details_pays size_14 white element_right">
+                        <li>N uuk</li>
+                        <li>2 166 000 km²</li>
+                        <li> 56 383 habitants </li>
+                        <li>Couronne Danoise</li>
+                        <li> -4h</li>
+                        <li>Kalaallisut/Anglais/Danois</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- TAB -->
+            <div class="clearfix"></div>
+            <ul class="nav nav-tabs responsive" role="tablist" id="myTab">
+                <li role="presentation" class="active col-md-3 col-xs-6 col-sm-3">
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                        <i class="fa fa-plane"></i>
+                        <br/> Vols
+                    </a>
+                </li>
+                <li role="presentation" class="col-md-3 col-xs-6 col-sm-3">
+                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                        <i class="fa fa-info-circle"></i>
+                        <br/> &Agrave; propos de ce voyage
+                    </a>
+                </li>
+                <li role="presentation" class="col-md-3 col-xs-6 col-sm-3">
+                    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                        <i class="fa fa-suitcase"></i>
+                        <br/> Check List
+                    </a>
+                </li>
+                <li role="presentation" class="col-md-3 col-xs-6 col-sm-3">
+                    <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                        <i class="fa fa-book"></i>
+                        <br/> Carnet de voyage
+                    </a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content responsive">
+                <!-- un-->
+                <div role="tabpanel" class="tab-pane vol active" id="home">
+                    <div class="col-md-8 col-xs-12 col-sm-12">
+                        <div class="col-md-6 col-xs-12 col-sm-6 infos_vol">
+                            <ul class="vol_depart">
+                                <li class="depart">
+                                    Vol de départ
+                                </li>
+                                <li class="horaires_vol">
+                                    9h43 <i class="fa fa-arrow-right"></i> 19h52
+                                </li>
+
+                                <li>
+                                    10h 09min de vol, Escale en Islande
+                                </li>
+                                <li>
+                                    Départ : Paris - Charles de Gaulle
+                                </li>
+
+                                <li>
+                                    Arrivée : Kangerlussuaq - International
+                                </li>
+                                <li>
+                                    Convocation à l'aéroport : 7h00
+                                </li>
+                                <li>
+                                    Vol SS96
+                                </li>
+                                <li>
+                                    Airbus A320
+                                </li>
+                                <li>
+                                    Distance totale : 3650 km
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-sm-6 infos_vol">
+                            <ul class="vol_depart">
+                                <li class="depart">
+                                    Vol de retour
+                                </li>
+                                <li class="horaires_vol">
+                                    11h04 <i class="fa fa-arrow-right"></i> 11h59 (J+1)
+                                </li>
+
+                                <li>
+                                    14h 13min de vol, Escale d'une nuit à Toronto
+                                </li>
+                                <li>
+                                    Départ : Kangerlussuaq - International
+                                </li>
+
+                                <li>
+                                    Arrivée : Paris - Charles de Gaulle
+                                </li>
+                                <li>
+                                    Vol SK80
+                                </li>
+                                <li>
+                                    Airbus A320
+                                </li>
+                                <li>
+                                    Distance totale : 8650 km
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr/>
+                    <p class="size_18">Inclus dans ce vol</p>
+                    <div class="inclus_vol size_20 margin-right">
+                        <i class="fa fa-suitcase size_30"></i> Frais de bagages
+                        <div class="info_inclus">
+                            Jusqu'à 3 bagages maximum par personnes en soute (de 22kilos maximum) + bagages à main dans l'avion
+                        </div>
+                    </div>
+                    <div class="inclus_vol size_20 margin-right">
+                        <i class="fa fa-desktop size_30"></i> Divertissements
+                        <div class="info_inclus">
+                            Un écran individuel est à votre disposition à bord de tous nos avions.
+                        </div>
+                    </div>
+                    <div class="inclus_vol size_20 margin-right">
+                        <i class="fa fa-newspaper-o size_30"></i> Livres & journaux
+                        <div class="info_inclus">
+                            Journaux en libre-service à l'embarquement. Presse digitale téléchargeable sur tablette avant le vol.
+                        </div>
+                    </div>
+                    <div class="inclus_vol size_20">
+                        <i class="fa fa-cutlery size_30"></i> Repas & collations
+                        <div class="info_inclus">
+                            Un rafraîchissement, une collation ou un repas (selon la durée du vol) ainsi que des boissons vous sont offertes.
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="mentions_avion size_14">
+                        <i class="fa fa-check-circle size_40"></i>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis varius rhoncus. Ut nulla erat, imperdiet quis arcu sed, dignissim condimentum mi. Nunc a nunc viverra, faucibus sem nec, viverra tellus.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis varius rhoncus. Ut nulla erat, imperdiet quis arcu sed, dignissim condimentum mi. Nunc a nunc viverra, faucibus sem nec, viverra tellus.Ut nulla erat, imperdiet quis arcu sed, dignissim condimentum mi. Nunc a nunc viverra, faucibus sem nec, viverra tellus.
+                        </span>
+                    </p>
+                </div>
+                <!-- deux-->
+                <div role="tabpanel" class="tab-pane apropos" id="profile">
+                    <!-- premiere colonne -->
+                    <div class="asavoir">
+                        <h4 class="size_12">Logement</h4>
+                        <div class="row col-md-4 bloc_asavoir col-xs-12 col-sm-4">
+                            <span class="icone_tab"><i class="fa fa-home size_23"></i></span>
+                            <ul>
+                                <li>Vos hôtes</li>
+                                <li>Couple + 2 enfants</li>
+                                <li>Bilingue Danois / Anglais</li>
+                                <li>Moyenne d’âge 25 ans</li>
+                            </ul>
+                        </div>
+                        <div class="row col-md-4 bloc_asavoir col-xs-12 col-sm-4">
+                            <span class="icone_tab"><i class="fa fa-user size_23"></i></span>
+                            <ul>
+                                <li>Logements</li>
+                                <li>maisonnette chez l'habitant</li>
+                                <li>2 nuits en igloo</li>
+                            </ul>
+                        </div>
+                        <div class="row col-md-4 bloc_asavoir col-xs-12 col-sm-4">
+                            <span class="icone_tab"><i class="fa fa-bed size_23"></i></span>
+                            <ul>
+                                <li>Chambres</li>
+                                <li>chambre privée</li>
+                                <li>lit double</li>
+                                <li>cheminée de chambre</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- deuxieme colonne -->
+                    <div class="asavoir">
+                        <h4 class="size_12">Sur place</h4>
+                        <div class="row col-md-4 bloc_asavoir col-xs-12 col-sm-4">
+                            <span class="icone_tab"><i class="fa fa-paper-plane size_23"></i></span>
+                            <ul>
+                                <li>Activités</li>
+                                <li>déplacement en traineau</li>
+                                <li>construction d'un igloo</li>
+                                <li>moyenne d’âge 25 ans</li>
+                            </ul>
+                        </div>
+                        <div class="row col-md-4 bloc_asavoir col-xs-12 col-sm-4">
+                            <span class="icone_tab"><i class="fa fa-male size_23"></i></span>
+                            <ul>
+                                <li>Traducteur sur place</li>
+                                <li>oui</li>
+                            </ul>
+                        </div>
+                        <div class="row col-md-4 bloc_asavoir col-xs-12 col-sm-4">
+                            <span class="icone_tab"><i class="fa fa-gift size_23"></i></span>
+                            <ul>
+                                <li>&Agrave; votre disposition</li>
+                                <li>serviettes de bain</li>
+                                <li>produits de soin du corps</li>
+                                <li>hammam</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- troisieme colonne -->
+                    <div class="asavoir">
+                        <h4 class="size_12">&Agrave; savoir avant de s'engager</h4>
+                        <div class="row col-md-4 bloc_asavoir col-xs-12 col-sm-4">
+                            <span class="icone_tab"><i class="fa fa-user-md size_23"></i></span>
+                            <ul>
+                                <li>Médical</li>
+                                <li>aucun vaccin en particulier</li>
+                            </ul>
+                        </div>
+                        <div class="row col-md-4 bloc_asavoir col-xs-12 col-sm-4">
+                            <span class="icone_tab"><i class="fa fa-paw size_23"></i></span>
+                            <ul>
+                                <li>Animaux</li>
+                                <li>non acceptés</li>
+                            </ul>
+                        </div>
+                        <div class="row col-md-4 bloc_asavoir col-xs-12 col-sm-4">
+                            <span class="icone_tab"><i class="fa fa-wheelchair size_23"></i></span>
+                            <ul>
+                                <li>Accès handicapé</li>
+                                <li>aucun accès handicapé</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <!-- trois -->
+                <div role="tabpanel" class="tab-pane checklist" id="messages">
+                    <div class="col-xs-12 col-sm-4 txt_grey block_check margin_right">
+                        <i class="fa fa-tag"></i>
+                        <ul>
+                            <li>Vêtements</li>
+                            <li>Blouson/manteaux chaud</li>
+                            <li>Pantalon spécial froid</li>
+                            <li>Sous-vetements isotherme</li>
+                            <li>Pulls</li>
+                            <li>Peignoir</li>
+                            <li>Boots</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 txt_grey block_check margin_right">
+                        <i class="fa fa-umbrella"></i>
+                        <ul>
+                            <li>Accessoires</li>
+                            <li>Lunettes de soleil/de vue</li>
+                            <li>Parapluie</li>
+                            <li>Sac de sorties</li>
+                            <li>Adapteur de prise universel</li>
+                            <li>Téléphone portable</li>
+                            <li>Appareil photo</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 txt_grey block_check">
+                        <i class="fa fa-file-text"></i>
+                        <ul>
+                            <li>Documents</li>
+                            <li>Carte d'identité</li>
+                            <li>Passeport</li>
+                            <li>Médicaments spécifiques</li>
+                            <li>Le mail de confirmation</li>
+                            <li>Monnaie/carte bleue</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <a href="#" class="btn-imprimer_list bold size_16 txt_grey">           
+                        Imprimer la liste
+                    </a>
+                </div>
+
+                <!-- quatre -->
+                <div role="tabpanel" class="tab-pane extraits_carnet-voyage" id="settings">
+                    <div class="content_extraits">
+                        <!-- carnet numero un -->
+                        <div class="col-md-3 block_carnet-voyage">
+                            <img src="{{ asset('images/avatar.png') }}" alt="" class="avatar" />
+                            <p class="size_20 bold">
+                                Simon
+                                <br/> Algarvez
+                            </p>
+                            <div class="clearfix"></div>
+                            <hr/>
+                            <p class="txt_yellow size_20">
+                                Mon voyage au grand froid
+                                <br/>
+                                <span class="txt_grey size_14">15/03/15</span>
+                            </p>
+                            <p class="extrait_carnet txt_grey size_16">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis varius rhoncus. Ut nulla erat, imperdiet quis arcu sed, dignissim condimentum mi. Nunc a nunc viverra, faucibus sem nec, viverra tellus. Vivamus molestie felis sit amet ornare placerat. Nullam sagittis magna ac orci ullamcorper, et placerat ipsum tincidunt...
+                            </p>
+                            <a href="#" class="btn-voir-carnet bold size_16 txt_grey">
+                                Lire ce carnet 
+                            </a>
+                        </div>
+
+                        <!-- carnet numero deux -->
+                        <div class="col-md-3 block_carnet-voyage">
+                            <img src="{{ asset('images/avatar_02.png') }}" alt="" class="avatar" />
+                            <p class="size_20 bold">
+                                Cynthia
+                                <br/> Dravel-brousse
+                            </p>
+                            <div class="clearfix"></div>
+                            <hr/>
+                            <p class="txt_yellow size_20">
+                                Un voyage au dela de toutes mes espérances
+                                <br/>
+                                <span class="txt_grey size_14">18/01/15</span>
+                            </p>
+                            <p class="extrait_carnet txt_grey size_16">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis varius rhoncus. Ut nulla erat, imperdiet quis arcu sed, dignissim condimentum mi. Nunc a nunc viverra, faucibus sem nec, viverra tellus. Vivamus molestie felis sit amet ornare placerat. Nullam sagittis magna ac orci ullamcorper, et placerat ipsum tincidunt...
+                            </p>
+                            <a href="#" class="btn-voir-carnet bold size_16 txt_grey">
+                                Lire ce carnet 
+                            </a>
+                        </div>
+
+                        <!-- carnet numero trois -->
+                        <div class="col-md-3 block_carnet-voyage third">
+                            <img src="{{ asset('images/avatar_01.png') }}" alt="" class="avatar" />
+                            <p class="size_20 bold">
+                                Dan
+                                <br/> Yin-ju
+                            </p>
+                            <div class="clearfix"></div>
+                            <hr/>
+                            <p class="txt_yellow size_20">
+                                Les magnifiques paysages du Cambodge
+                                <br/>
+                                <span class="txt_grey size_14">22/09/14</span>
+                            </p>
+                            <p class="extrait_carnet txt_grey size_16">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis varius rhoncus. Ut nulla erat, imperdiet quis arcu sed, dignissim condimentum mi. Nunc a nunc viverra, faucibus sem nec, viverra tellus. Vivamus molestie felis sit amet ornare placerat. Nullam sagittis magna ac orci ullamcorper, et placerat ipsum tincidunt...
+                            </p>
+                            <a href="#" class="btn-voir-carnet bold size_16 txt_grey">
+                                Lire ce carnet 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="boutons_tab">
+                <a href="#" class="btn_contact uppercase">
+                    nous contacter
+                </a>
+                <a href="#" class="btn-reserver uppercase bold">
+                    réserver ce voyage 
+                    <i class="fa fa-angle-double-right"></i>
+                </a>
+            </div>
+
+            <!-- PRESENTATION VOYAGE  -->
+            <div class="presentation_autres_voyages">
+                <span class="uppercase white size_30 title_avenir">
+                les voyages à venir
+            </span>
+                <div class="autres_voyages voyage_first">
+                    <img src="{{ ('images/voyage_01.jpg') }}" alt="" class="img_voyage" />
+                    <p class="bloc_pres_voyage size_30">
+                        Himalaya
+                        <br/>
+                        <a href="#" class="txt_grey link_voyages">
+                            <i class="fa fa-angle-double-right"></i> Voir la fiche voyage
+                        </a>
+                    </p>
+                </div>
+                <div class="autres_voyages voyage_second">
+                    <img src="{{ asset('images/voyage_02.jpg') }}" alt="" class="img_voyage" />
+                    <p class="bloc_pres_voyage size_30">
+                        Sahara
+                        <br/>
+                        <a href="#" class="txt_grey link_voyages">
+                            <i class="fa fa-angle-double-right"></i> Voir la fiche voyage
+                        </a>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="autres_voyages voyage_first">
+                    <img src="{{ asset('images/voyage_03.jpg') }}" alt="" class="img_voyage" />
+                    <p class="bloc_pres_voyage size_30">
+                        Mongolie
+                        <br/>
+                        <a href="#" class="txt_grey link_voyages">
+                            <i class="fa fa-angle-double-right"></i> Voir la fiche voyage
+                        </a>
+                    </p>
+                </div>
+                <div class="autres_voyages voyage_second">
+                    <img src="{{ asset('images/voyage_04.jpg') }}" alt="" class="img_voyage" />
+                    <p class="bloc_pres_voyage size_30">
+                        Madagascar
+                        <br/>
+                        <a href="#" class="txt_grey link_voyages">
+                            <i class="fa fa-angle-double-right"></i> Voir la fiche voyage
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+            <footer>
+                <a href="#" class="fleche_top"></a>
+                <ul class="footer_liens col-md-4 col-sm-3">
+                    <li><a href="#" class="uppercase white">accueil</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">voyages</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">carnets de voyages</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">actualité</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">contact</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">connexion</a>
+                    </li>
+                </ul>
+                <ul class="footer_liens col-md-4 col-sm-3">
+                    <li><a href="#" class="uppercase white">nos valeurs</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">nos conditions d'utilisation</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">mentions légales</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">politique</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">presse</a>
+                    </li>
+                </ul>
+                <div class="col-md-4 col-xs-12 col-sm-3">
+                    <form class="newsletter_inscription">
+                        <h4 class="bold size_20 txt_yellow uppercase">
+                        suivez nos aventures
+                    </h4>
+                        <input type="text" class="newsletter_input" value="" placeholder="Entrez votre email" />
+                        <input type="submit" class="btn_inscription" value="S'inscrire" />
+                    </form>
+                    <form>
+                        <h4 class="bold size_20 txt_yellow uppercase">
+                        recherche
+                    </h4>
+                        <input type="search" placeholder="Tapez votre recherche" name="the_search" class="search_input"><i class="fa fa-search size_20 white"></i>
+                    </form>
+                    <div class="reseaux_sociaux">
+                        <a href="#" target="_blank" class="rs-link facebook">
+                            <img src="{{ asset('images/icone_facebook.png')}}" alt="" />
+                        </a>
+                        <a href="#" target="_b lank" class="rs-link twitter">
+                            <img src="{{ asset('images/icone_twitter.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link googleplus">
+                            <img src="{{ asset('images/icone_google.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link youtube">
+                            <img src="{{ asset('images/icone_youtube.png') }}" alt="" />
+                        </a>
+                    </div>
+                    <img src="{{ asset('images/modepaiement.png') }}" alt="" class="mode_paiement" />
+                </div>
+                <div class="clearfix"></div>
+                <hr/>
+                <img src="{{ asset('images/logo_footer.png') }}" alt="" class="logo_footer" />
+                <span class="copyright uppercase white">
+                &copy; wanderlust travel - 2015
+            </span>
+
+                <div class="clearfix"></div>
+            </footer>
+        </div>
+    </div>
+
+    <!--script-->
+    <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/scrollto.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+
+</body>
+
+</html>
