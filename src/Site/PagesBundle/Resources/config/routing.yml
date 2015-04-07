@@ -1,3 +1,10 @@
 index:
     path:     /
     defaults: { _controller: PagesBundle:Pages:index }
+actualites:
+    path:     /actualites
+    defaults: { _controller: PagesBundle:Pages:actualites }
+    
+fiches_voyage:
+    path:     /fiches_voyages
+    defaults: { _controller: PagesBundle:Pages:fichesvoyages }
