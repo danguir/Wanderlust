@@ -17,5 +17,10 @@ class PagesController extends Controller
         public function fichesVoyagesAction()
     {
         return $this->render('PagesBundle::fiche_voyage.html.twig');
-    } 
+    }
+
+        public function carnetDeBordAction()
+        {
+            return $this->render('PagesBundle::carnet_de_bord.html.twig');
+        }
 }

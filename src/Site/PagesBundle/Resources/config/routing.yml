@@ -8,3 +8,7 @@ actualites:
 fiches_voyage:
     path:     /fiches_voyages
     defaults: { _controller: PagesBundle:Pages:fichesvoyages }
+
+carnet_de_bord:
+    path:     /carnet_de_bord
+    defaults: { _controller: PagesBundle:Pages:carnetdebord }

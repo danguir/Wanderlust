@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Wanderlust</title>
+
+    <!-- css-->
+    <!--<link rel="stylesheet" href="{{ asset('css/bootstrap.') }}" />
+<link rel="stylesheet" href="{{ asset('css/carousel.css') }}" />-->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+
+    <!-- fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="page">
+<div id="carnet_voyages" class="groenland">
+<nav class="navbar navbar-fixed-top desktop">
+    <a href="#" class="logo"></a>
+    <ul>
+        <li class="uppercase"><a href="{{ path('index') }}" class="no_bg">accueil</a>
+        </li>
+        <li class="uppercase"><a href="#" target="_blank">voyages</a>
+        </li>
+        <li class="uppercase"><a href="#" target="_blank">carnets de voyages</a>
+        </li>
+        <li class="uppercase"><a href="{{ path('actualites') }}">actualités</a>
+        </li>
+        <li class="uppercase"><a href="#" target="_blank">contact</a>
+        </li>
+        <li class="uppercase"><a href="{{ path('connexion_utilisateur') }}" class="btn_connexion no_bg">connexion</a>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</nav>
+
+<nav class="navbar navbar-fixed-top mobile">
+    <a href="#menu" id="toggle"><span></span></a>
+    <div class="clearfix"></div>
+    <ul>
+        <li class="uppercase"><a href="#" target="_blank" class="no_bg">accueil</a>
+        </li>
+        <li class="uppercase"><a href="#" target="_blank">voyages</a>
+        </li>
+        <li class="uppercase"><a href="#" target="_blank">carnets de voyages</a>
+        </li>
+        <li class="uppercase"><a href="#" target="_blank">actualités</a>
+        </li>
+        <li class="uppercase"><a href="#" target="_blank">contact</a>
+        </li>
+        <li class="uppercase"><a href="#" target="_blank" class="btn_connexion no_bg">connexion</a>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</nav>
+
+<header>
+    <!-- Carousel-->
+    <div class="carousel slide">
+        <a href="#carnet_voyage" class="fleche_bottom">
+            <i class="fa fa-angle-down"></i>
+        </a>
+        <div class="carousel-inner">
+            <div class="item active"> <img src="{{ asset('images/peru_header.jpg') }}" alt="First slide" style="width:100%;">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>LES ÎLES DU PEROU</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section-carnet-voyage" id="carnet_voyage">
+    <div class="content-box ">
+        <div class="center">
+            <h2>Les îles du pérou.</h2>
+            <div class="author_title">par Gauthier Desprets</div>
+        </div>
+        <h3>L’île d’Uros</h3>
+        <p class="white">
+            Olga, un petit bout de péruvienne, va nous faire découvrir son île, Amantani. Grâce a elle, nous embarquons seuls sur u bateau qui va nous amener d’île en île sur le lac Titicaca. La prèmiere étape se fait sur une des îles flottantes : Uros. C’est un regard sur une civilisation d’un autre âge presentée par une famille. Ce fut un moment sympathique ; à notre départ, les femmes de l’île nous ont chanté Alouette gentille alouette!
+        </p>
+        <h3>L’île d’Amamtani</h3>
+        <p class="white">
+            Après 3 heures de croisière sous un grand soleil (température idéale), nous sommes arrivés sur l’île d’Olga, Amamtani, où nous avons passé la nuit. Un grand moment authentique. Après une belle grimpette, quel bel accueil par la maman d Olga. Retour 100 ans en arrière : maison en terre, pas d’eau pas d’électricite, cuisine sur le feu de bois. À la nuit tombée (18 h), les femmes de la maison nous ont servi un excellent repas à la lueur des chandelles. À 20h30, extinction des bougies, tout le monde au lit sous de multiples couvertures que nous apprecions bien.
+        </p>
+        <h3>L’île de Taquile</h3>
+        <span class="little_grey_border"></span>
+        <p class="white">
+            De bon matin (7 h), bonne surprise, petit déjeuner royal (pancake et pain maison); on craignait le déjeuner local : soupe de légumes. Séquence émotion quand nous avons quitté la famille pour rejoindre la 3ème île, Taquile, à une heure de bateau. Une nouvelle ascension d’une heure pour rejoindre le village, nous fait decouvrir toute la beauté, l’immensité du lac Titicaca.
+        </p>
+        <p class="white">
+            C’est aussi l’occasion pour nous de croiser les habitants de l’île, de decouvrir leurs costumes, leur savoir faire (ici, les hommes tricotent des bonnets et les femmes tissent). C’est la fin d’un superbe circuit. Grâce à Olga, son professionalisme et sa gentillesse nous avons pu apprécier une nouvelle facette du Pérou. Merci à elle !
+        </p>
+
+        <p class="says">
+            <i class="fa fa-quote-left"></i> I went to a bathhouse last Saturday (after all, I cannot go to America for a bath). They handed me two checks. One for my underwear, the other for my coat and hat. But where is a naked man to put those checks? Honestly, there is no place for them. You have no pockets.
+            <i class="fa fa-quote-right"></i>
+        </p>
+
+        <div class="circle-container">
+            <div class="outer-ring"></div>
+            <!-- Used for more of a gyroscope type effect
+<div class="outer-outer-ring"></div>
+-->
+            <div class="circle">
+
+                <div class="back">
+                    <a href="#"><img class="back-logo" src="{{ asset('images/eye_profil.png') }}" alt="Eye icon" />
+                    </a>
+                </div>
+                <div class="front">
+                    <img class="back-logo" src="{{ asset('images/profil.png') }}" alt="The Elevation Group Logo" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="section-slider-carnet-voyage" id="slider_carnet_voyage">
+    <div class="">
+
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active"> <img src="{{ asset('images/image_peru/huacachina-solo-matador-seo.jpg') }}" alt="First slide" style="width:100%;">
+
+                </div>
+                <div class="item"> <img src="{{ asset('images/image_peru/cusco-peru-matador-seo.jpg') }}" alt="First slide" style="width:100%;">
+
+                </div>
+                <div class="item"> <img src="{{ asset('images/image_peru/colca-canyon-matador-seo.jpg') }}" alt="First slide" style="width:100%;">
+
+                </div>
+                <div class="item"> <img src="{{ asset('images/image_peru/makaha-lima-matador-seo.jpg') }}" alt="First slide" style="width:100%;">
+
+                </div>
+                <div class="item"> <img src="{{ asset('images/image_peru/inca-trail1-matador-seo.jpg') }}" alt="First slide" style="width:100%;">
+
+                </div>
+            </div>
+            <!--
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            -->
+        </div>
+    </div>
+    <!--a href="#" target="_blank" class="white size_20 font-light btn_galerie">
+<i class="fa fa-camera"></i>
+<span>Voir la galerie</span>
+</a-->
+    <button class="button button--ujarak button--border-medium button--round-s button--text-thick btn_galerie">
+        <i class="fa fa-camera"></i>Voir la galerie
+    </button>
+    <!--i class="glyphicon glyphicon-camera"></i-->
+</section>
+
+<section class="section-network" id="network">
+    <div class="container ">
+        <div class="center">
+            <h2>Partagez cet article</h2>
+
+            <ul class="unstyled inline small-screen-center social-icons social-background social-big">
+                <li>
+                    <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://twitter.com/oxygenna">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1001246.8328756253!2d-76.08630274294237!3d-11.398797557505402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2zUMOpcm91!5e0!3m2!1sfr!2sfr!4v1428417586637" width="100%" height="600" frameborder="0" style="border:0"></iframe>
+
+</section>
+
+<section class="section-comment" id="comment">
+    <div class="container">
+        <div class="center">
+            <h2>Commentaires</h2>
+
+            <div class="plus-comment-reply">
+                <div class="pointer"></div>
+                <div class="plus-comment-details">
+                    <img class="img-circle blogheadimg" src="{{ asset('images/avatar.png') }}">
+                    <label class="plus-comment-name"><a href="#">Simon Algarvez</a>
+                    </label>
+                    <label class="plus-comment-date">3 days ago</label>
+                </div>
+                            <span>
+						  <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur.
+                          </p>
+						</span>
+            </div>
+
+            <div class="plus-comment-reply">
+                <div class="pointer"></div>
+                <div class="plus-comment-details">
+                    <img class="img-circle blogheadimg" src="{{ asset('images/avatar_01.png') }}">
+                    <label class="plus-comment-name"><a href="#">Dan Yin-ju</a>
+                    </label>
+                    <label class="plus-comment-date">3 days ago</label>
+                </div>
+                            <span>
+						  <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur.
+                          </p>
+						</span>
+            </div>
+            <div class="plus-comment-reply">
+                <div class="pointer"></div>
+                <div class="plus-comment-details">
+                    <img class="img-circle blogheadimg" src="{{ asset('images/avatar_02.png') }}">
+                    <label class="plus-comment-name"><a href="#">Cinthia Dravel-brousse</a>
+                    </label>
+                    <label class="plus-comment-date">3 days ago</label>
+                </div>
+                            <span>
+						  <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur.
+                          </p>
+						</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="comment-form">
+    <div class="container">
+        <div class="center">
+            <h2>Ajouter commentaires</h2>
+        </div>
+        <div class="form-center">
+                        <span class="input input--hideo">
+								<input class="input__field input__field--hideo" type="text" id="input-41" />
+								<label class="input__label input__label--hideo" for="input-41">
+                                    <i class="fa fa-fw fa-user icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo">Nom</span>
+                                </label>
+                        </span>
+                        <span class="input input--hideo">
+								<input class="input__field input__field--hideo" type="text" id="input-42" />
+								<label class="input__label input__label--hideo" for="input-42">
+                                    <i class="fa fa-fw fa-envelope icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo">Email</span>
+                                </label>
+                        </span>
+                        <span class="input input--hideo">
+								<input class="input__field input__field--hideo" type="text" id="input-43" />
+								<label class="input__label input__label--hideo" for="input-43">
+                                    <i class="fa fa-fw fa-link icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo">URL</span>
+                                </label>
+                        </span>
+
+                        <span class="input input--hideo" style="height: 100px;">
+								<input class="input__field input__field--hideo" type="text" id="input-43" />
+								<label class="input__label input__label--hideo" for="input-43">
+                                    <i class="fa fa-fw fa-comment icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo">Password</span>
+                                </label>
+                        </span>
+
+        </div>
+        <button class="button button--ujarak button--border-medium button--round-s button--text-thick btn_galerie">
+            Envoyer
+        </button>
+        <!--/div-->
+    </div>
+    <!-- /container -->
+</section>
+
+
+
+<div class="clearfix"></div>
+<footer>
+    <a href="#" class="fleche_top"></a>
+    <ul class="footer_liens col-md-4 col-sm-3">
+        <li><a href="#" class="uppercase white">accueil</a>
+        </li>
+        <li><a href="#" class="uppercase white">voyages</a>
+        </li>
+        <li><a href="#" class="uppercase white">carnets de voyages</a>
+        </li>
+        <li><a href="#" class="uppercase white">actualité</a>
+        </li>
+        <li><a href="#" class="uppercase white">contact</a>
+        </li>
+        <li><a href="#" class="uppercase white">connexion</a>
+        </li>
+    </ul>
+    <ul class="footer_liens col-md-4 col-sm-3">
+        <li><a href="#" class="uppercase white">nos valeurs</a>
+        </li>
+        <li><a href="#" class="uppercase white">nos conditions d'utilisation</a>
+        </li>
+        <li><a href="#" class="uppercase white">mentions légales</a>
+        </li>
+        <li><a href="#" class="uppercase white">politique</a>
+        </li>
+        <li><a href="#" class="uppercase white">presse</a>
+        </li>
+    </ul>
+    <div class="col-md-4 col-xs-12 col-sm-3">
+        <form class="newsletter_inscription">
+            <h4 class="bold size_20 txt_yellow uppercase">
+                suivez nos aventures
+            </h4>
+            <input type="text" class="newsletter_input" value="" placeholder="Entrez votre email" />
+            <input type="submit" class="btn_inscription" value="S'inscrire" />
+        </form>
+        <form>
+            <h4 class="bold size_20 txt_yellow uppercase">
+                recherche
+            </h4>
+            <input type="search" placeholder="Tapez votre recherche" name="the_search" class="search_input"><i class="fa fa-search size_20 white"></i>
+        </form>
+        <div class="reseaux_sociaux">
+            <a href="#" target="_blank" class="rs-link facebook">
+                <img src="{{ asset('images/icone_facebook.png')}}" alt="" />
+            </a>
+            <a href="#" target="_b lank" class="rs-link twitter">
+                <img src="{{ asset('images/icone_twitter.png') }}" alt="" />
+            </a>
+            <a href="#" target="_blank" class="rs-link googleplus">
+                <img src="{{ asset('images/icone_google.png') }}" alt="" />
+            </a>
+            <a href="#" target="_blank" class="rs-link youtube">
+                <img src="{{ asset('images/icone_youtube.png') }}" alt="" />
+            </a>
+        </div>
+        <img src="{{ asset('images/modepaiement.png') }}" alt="" class="mode_paiement" />
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+    <img src="{{ asset('images/logo_footer.png') }}" alt="" class="logo_footer" />
+                <span class="copyright uppercase white">
+                &copy; wanderlust travel - 2015
+            </span>
+
+    <div class="clearfix"></div>
+</footer>
+</div>
+</div>
+
+
+<!--script-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/scrollto.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+
+
+
+</body>
+
+</html>

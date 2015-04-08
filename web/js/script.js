@@ -1,10 +1,10 @@
     $(document).ready(function() {
         /*nav bar scroll*/
         $(window).scroll(function() {
-            if ($(this).scrollTop() > 400) {
+            if ($(this).scrollTop() >= 400) {
                 $('nav.navbar.desktop').animate({
                     opacity: 1,
-                    height: "40px",
+                    height: "40px"
                 }, 300, function() {
                     $('nav.navbar.desktop').css('line-height', '50px');
                     $('nav a.logo').addClass('scroll');
