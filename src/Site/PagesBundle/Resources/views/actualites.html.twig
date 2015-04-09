@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="utf-8" />
@@ -24,7 +23,7 @@
 
 <body>
     <div id="page">
-        <div id="actualites" class="">
+        <div id="actualites_presentation" class="">
             <nav class="navbar navbar-fixed-top desktop">
                 <a href="#" class="logo"></a>
                 <ul>
@@ -71,6 +70,56 @@
                 <div class="container">
                     <div class="magazine-cn">
                         <div class="row">
+							  <!-- Magazine Thumnail -->
+                            <div class="col-lg-6">
+                                <div class="magazine-thum" id="magazine-thum">
+                                    <!--Thumnail Item-->
+                                    <div class="thumnail-item active clearfix_slide">
+                                        <figure class="float-left">
+                                            <img src="{{ asset('images/img-1.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="thumnail-text">
+                                            <h4>La Holi en Inde</h4>
+                                            <span>01.03.2015</span>
+                                        </div>
+                                    </div>
+                                    <!--End Thumnail Item-->
+                                    <!--Thumnail Item-->
+                                    <div class="thumnail-item clearfix_slide clearfloat">
+                                        <figure class="float-left">
+                                            <img src="{{ asset('images/img-2.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="thumnail-text">
+                                            <h4>Les loups de mongolie</h4>
+                                            <span>27.02.2015</span>
+                                        </div>
+                                    </div>
+                                    <!--End Thumnail Item-->
+                                    <!--Thumnail Item-->
+                                    <div class="thumnail-item clearfix_slide clearfloat">
+                                        <figure class="float-left">
+                                            <img src="{{ asset('images/img-3.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="thumnail-text">
+                                            <h4>Le voyage du sable</h4>
+                                            <span>24.02.2015</span>
+                                        </div>
+                                    </div>
+                                    <!--End Thumnail Item-->
+                                    <!--Thumnail Item-->
+                                    <div class="thumnail-item clearfix_slide clearfloat">
+                                        <figure class="float-left">
+                                            <img src="{{ asset('images/img-4.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="thumnail-text">
+                                            <h4>La découverte d'une île</h4>
+                                            <span>01.04.2015</span>
+                                        </div>
+                                    </div>
+                                    <!--End Thumnail Item-->
+                                </div>
+                            </div>
+                            <!-- End Magazine Thumnail -->
                             <!-- Magazine Descript -->
                             <div class="col-lg-6">
                                 <div class="magazine-ds">
@@ -216,370 +265,88 @@
                                 </div>
                             </div>
                             <!-- End Magazine Descript -->
-                            <!-- Magazine Thumnail -->
-                            <div class="col-lg-6">
-                                <div class="magazine-thum" id="magazine-thum">
-                                    <!--Thumnail Item-->
-                                    <div class="thumnail-item active clearfix_slide">
-                                        <figure class="float-left">
-                                            <img src="{{ asset('images/img-1.jpg') }}" alt="">
-                                        </figure>
-                                        <div class="thumnail-text">
-                                            <h4>La Holi en Inde</h4>
-                                            <span>01.03.2015</span>
-                                        </div>
-                                    </div>
-                                    <!--End Thumnail Item-->
-                                    <!--Thumnail Item-->
-                                    <div class="thumnail-item clearfix_slide clearfloat">
-                                        <figure class="float-left">
-                                            <img src="{{ asset('images/img-2.jpg') }}" alt="">
-                                        </figure>
-                                        <div class="thumnail-text">
-                                            <h4>Les loups de mongolie</h4>
-                                            <span>27.02.2015</span>
-                                        </div>
-                                    </div>
-                                    <!--End Thumnail Item-->
-                                    <!--Thumnail Item-->
-                                    <div class="thumnail-item clearfix_slide clearfloat">
-                                        <figure class="float-left">
-                                            <img src="{{ asset('images/img-3.jpg') }}" alt="">
-                                        </figure>
-                                        <div class="thumnail-text">
-                                            <h4>Le voyage du sable</h4>
-                                            <span>24.02.2015</span>
-                                        </div>
-                                    </div>
-                                    <!--End Thumnail Item-->
-                                    <!--Thumnail Item-->
-                                    <div class="thumnail-item clearfix_slide clearfloat">
-                                        <figure class="float-left">
-                                            <img src="{{ asset('images/img-4.jpg') }}" alt="">
-                                        </figure>
-                                        <div class="thumnail-text">
-                                            <h4>La découverte d'une île</h4>
-                                            <span>01.04.2015</span>
-                                        </div>
-                                    </div>
-                                    <!--End Thumnail Item-->
-                                </div>
-                            </div>
-                            <!-- End Magazine Thumnail -->
                         </div>
                     </div>
                 </div>
                 <!-- End Magazine Content -->
+					<a href="{{ path('actualites_suite') }}" class="awe-btn awe-btn-5 arrow-right awe-btn-lager text-uppercase lire_articles">
+						Lire tous les articles
+					</a>
             </section>
             <!-- End Travel Magazine -->
-
-            <div class="clearfix"></div>
-            <div class="actualites">
-                <div class="col-xs-12 col-sm-8 col-md-8 articles">
-
-                    <div class="btn_themes">
-                        <a href="#" class="bt_filtre decouverte">
-                        Découverte
-                    </a>
-                        <a href="#" class="bt_filtre ecologie">
-                       Ecologie
-                    </a>
-                        <a href="#" class="bt_filtre culture">
-                       Culture
-                    </a>
-                        <a href="#" class="bt_filtre conflits">
-                       Conflits
-                    </a>
-                        <a href="#" class="bt_filtre technologie">
-                       Technologie
-                    </a>
-                        <a href="#" class="bt_filtre sante">
-                       Santé
-                    </a>
-                    </div>
-                    <!-- 1er actu -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 bloc_actu">
-                        <img src="{{ asset('images/actu01.jpg') }}" alt="" class="col-xs-12 col-sm-4 col-md-4" />
-                        <div class="col-xs-12 col-sm-8 col-md-8">
-                            <div class="col-md-12 ligne">
-                                <h4>Une nouvelle île</h4>
-                                <p class="date">19 Mars 2015</p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="col-md-12 ligne">
-                                <a href="#" class="bt_filtre decouverte">
-                               Découverte
-                            </a>
-                                <a href="#" class="comm">4 commentaires</a>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p class="col-md-12 extrait">
-                                Plus de deux mois après son apparition dans cet archipel de l’océan Pacifique, l'île volcanique a été pour la première fois explorée par le gérant d’un hôtel et deux de ses amis qui n'ont pas résisté à l'idée de faire partager lesimages paradisiaques de leur visite.
-                                <br/>
-                                <a href="#" class="lire_article">
-                                Lire l'article <i class="fa fa-angle-double-right"></i>
-                            </a>
-                            </p>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <hr />
-                    <!-- 2eme actu -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 bloc_actu">
-                        <img src="{{ asset('images/actu02.jpg') }}" alt="" class="col-xs-12 col-sm-4 col-md-4" />
-                        <div class="col-xs-12 col-sm-8 col-md-8">
-                            <div class="col-md-12 ligne">
-                                <h4>Le voyage du sable</h4>
-                                <p class="date">16 Mars 2015</p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="col-md-12 ligne">
-                                <a href="#" class="bt_filtre ecologie">
-                               Ecologie
-                            </a>
-                                <a href="#" class="comm">17 commentaires</a>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p class="col-md-12 extrait">
-                                Une étude de la NASA dévoile le voyage que fait le sable porté par le vent, du désert du Sahara à la forêt amazonienne. Chaque année, près de 182 millions de tonnes de sable s'envolent et traversent l'Atlantique...
-                                <br/>
-                                <a href="#" class="lire_article">
-                                Lire l'article <i class="fa fa-angle-double-right"></i>
-                            </a>
-                            </p>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <hr />
-
-
-                    <!-- 3eme actu -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 bloc_actu">
-                        <img src="{{ asset('images/actu03.jpg') }}" alt="" class="col-xs-12 col-sm-4 col-md-4" />
-                        <div class="col-xs-12 col-sm-8 col-md-8">
-                            <div class="col-md-12 ligne">
-                                <h4>Les loups de mongolie </h4>
-                                <p class="date">02 Mars 2015</p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="col-md-12 ligne">
-                                <a href="#" class="bt_filtre culture">
-                               Culture
-                            </a>
-                                <a href="#" class="comm">6 commentaires</a>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p class="col-md-12 extrait">
-                                C’est la première fois que des loups de Mongolie ont dû être imprégnés pour le cinéma. «On ne savait pas si ça allait marcher, mais je voulais absolument des loups mongols, qui sont d’un pelage un peu brun, la couleur dominante de la steppe de septembre à juin....»
-                                <br/>
-                                <a href="#" class="lire_article">
-                                Lire l'article <i class="fa fa-angle-double-right"></i>
-                            </a>
-                            </p>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <hr />
-
-                    <!-- 4eme actu -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 bloc_actu">
-                        <img src="{{ asset('images/actu04.jpg') }}" alt="" class="col-xs-12 col-sm-4 col-md-4" />
-                        <div class="col-xs-12 col-sm-8 col-md-8">
-                            <div class="col-md-12 ligne">
-                                <h4>Accroissement des réfugiés </h4>
-                                <p class="date">27 Fév. 2015</p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="col-md-12 ligne">
-                                <a href="#" class="bt_filtre conflits">
-                               Conflits
-                            </a>
-                                <a href="#" class="comm">28 commentaires</a>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p class="col-md-12 extrait">
-                                L’ONG de défense des droits humains fait savoir que l’année a été caractérisée par une intensification des conflits et un accroissement du nombre de réfugiés dans le monde. Le Haut-Commissariat des Nations unies estimait déjà à 50 millions de personnes réfugiées, demandeurs d’asile ou déplacées à l’intérieur de leur pays depuis la fin de la seconde guerre mondiale.
-                                <br/>
-                                <a href="#" class="lire_article">
-                                Lire l'article <i class="fa fa-angle-double-right"></i>
-                            </a>
-                            </p>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <hr />
-
-
-                    <!-- 5eme actu -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 bloc_actu">
-                        <img src="{{ asset('images/actu05.jpg') }}" alt="" class="col-xs-12 col-sm-4 col-md-4" />
-                        <div class="col-xs-12 col-sm-8 col-md-8">
-                            <div class="col-md-12 ligne">
-                                <h4>Voyagez en jouant  </h4>
-                                <p class="date">20 Fév. 2015</p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="col-md-12 ligne">
-                                <a href="#" class="bt_filtre technologie">
-                               Technologie
-                            </a>
-                                <a href="#" class="comm">25 commentaires</a>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p class="col-md-12 extrait">
-                                Last Voyage met un peu de côté les vaisseaux de guerre rutilants de ce type d'univers pour aborder un thème spécifique : "ce qui s'étend au delà de la culture humaine et de la technologie". Alors que les mécaniques de jeu changent au fil des chapitres, le style graphique passera lui aussi à travers
-                                <br/> plusieurs genres...
-                                <br/>
-                                <a href="#" class="lire_article">
-                                Lire l'article <i class="fa fa-angle-double-right"></i>
-                            </a>
-                            </p>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <div class="col-xs-12 col-sm-3 col-md-3 right_block">
-                    <div class="col-xs-12 col-sm-8 col-md-8 bloc_newsletter">
-                        <p><span>Inscrivez vous à notre newsletter 
-                    gratuite dès maintenant !</span> Recevez chaque mois les actualités, les carnets de voyage et les sélections de voyage Wanderlust
-                        </p>
-
-                        <form class="newsletter_inscription">
-                            <input type="text" class="newsletter_input" value="" placeholder="Entrez votre email" />
-                            <input type="submit" class="btn_inscription" value="S'inscrire" />
-                        </form>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-8 col-md-8 new_voyage">
-                        <p>
-                            <span>
-                               Découvrez le nouveau voyage 
-exceptionnel Wanderlust !
-                            </span> Traversée du Sahara accompagnée de nomades
-                        </p>
-                        <img src="{{ asset('images/voyage-nomade.jpg') }}" alt="" />
-                        <a href="#" class="voir_suite">Voir ce carnet&nbsp;<i class="fa fa-angle-double-right"></i></a>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-8 col-md-8 new_carnet">
-                        <p>
-                            <span>
-                                Découvrez le carnet de voyage 
-Wanderlust le plus consulté ce 
-mois-ci !
-                            </span> Mon voyage au Machu Pichu
-                            <a href="#">Maya Petipre</a>
-                        </p>
-                        <img src="{{ asset('images/new_carnet.jpg') }}" alt="" />
-                        <a href="#" class="voir_suite">Voir ce carnet&nbsp;<i class="fa fa-angle-double-right"></i></a>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="bloc_numerotation">
-                    <a href="#">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="clearfix"></div>
         </div>
         <div class="clearfix"></div>
 
         <footer>
-            <a href="#" class="fleche_top"></a>
-            <ul class="footer_liens col-md-4 col-sm-3">
-                <li><a href="#" class="uppercase white">accueil</a>
-                </li>
-                <li><a href="#" class="uppercase white">voyages</a>
-                </li>
-                <li><a href="#" class="uppercase white">carnets de voyages</a>
-                </li>
-                <li><a href="#" class="uppercase white">actualité</a>
-                </li>
-                <li><a href="#" class="uppercase white">contact</a>
-                </li>
-                <li><a href="#" class="uppercase white">connexion</a>
-                </li>
-            </ul>
-            <ul class="footer_liens col-md-4 col-sm-3">
-                <li><a href="#" class="uppercase white">nos valeurs</a>
-                </li>
-                <li><a href="#" class="uppercase white">nos conditions d'utilisation</a>
-                </li>
-                <li><a href="#" class="uppercase white">mentions légales</a>
-                </li>
-                <li><a href="#" class="uppercase white">politique</a>
-                </li>
-                <li><a href="#" class="uppercase white">presse</a>
-                </li>
-            </ul>
-            <div class="col-md-4 col-xs-12 col-sm-3">
-                <form class="newsletter_inscription">
-                    <h4 class="bold size_20 txt_yellow uppercase">
+                <a href="#" class="fleche_top"></a>
+                <ul class="footer_liens col-md-4 col-sm-3">
+                    <li><a href="#" class="uppercase white">accueil</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">voyages</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">carnets de voyages</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">actualité</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">contact</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">connexion</a>
+                    </li>
+                </ul>
+                <ul class="footer_liens col-md-4 col-sm-3">
+                    <li><a href="#" class="uppercase white">nos valeurs</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">nos conditions d'utilisation</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">mentions légales</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">politique</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">presse</a>
+                    </li>
+                </ul>
+                <div class="col-md-4 col-xs-12 col-sm-3">
+                    <form class="newsletter_inscription">
+                        <h4 class="bold size_20 txt_yellow uppercase">
                         suivez nos aventures
                     </h4>
-                    <input type="text" class="newsletter_input" value="" placeholder="Entrez votre email" />
-                    <input type="submit" class="btn_inscription" value="S'inscrire" />
-                </form>
-                <form>
-                    <h4 class="bold size_20 txt_yellow uppercase">
-                        recherche
-                    </h4>
-                    <input type="search" placeholder="Tapez votre recherche" name="the_search" class="search_input"><i class="fa fa-search size_20 white"></i>
-                </form>
-                <div class="reseaux_sociaux">
-                    <a href="#" target="_blank" class="rs-link facebook">
-                        <img src="{{ asset('images/icone_facebook.png') }}" alt="" />
-                    </a>
-                    <a href="#" target="_blank" class="rs-link twitter">
-                        <img src="{{ asset('images/icone_twitter.png') }}" alt="" />
-                    </a>
-                    <a href="#" target="_blank" class="rs-link googleplus">
-                        <img src="{{ asset('images/icone_google.png') }}" alt="" />
-                    </a>
-                    <a href="#" target="_blank" class="rs-link youtube">
-                        <img src="{{ asset('images/icone_youtube.png') }}" alt="" />
-                    </a>
+                        <input type="text" class="newsletter_input" value="" placeholder="Entrez votre email" />
+                        <input type="submit" class="btn_inscription" value="S'inscrire" />
+                    </form>
+                    <div class="reseaux_sociaux">
+                        <a href="#" target="_blank" class="rs-link facebook">
+                            <img src="{{ asset('images/icone_facebook.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link twitter">
+                            <img src="{{ asset('images/icone_twitter.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link googleplus">
+                            <img src="{{ asset('images/icone_google.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link youtube">
+                            <img src="{{ asset('images/icone_youtube.png') }}" alt="" />
+                        </a>
+                    </div>
+                    <img src="{{ asset('images/modepaiement.png') }}" alt="" class="mode_paiement" />
                 </div>
-                <img src="images/modepaiement.png" alt="" class="mode_paiement" />
-            </div>
-            <div class="clearfix"></div>
-            <hr/>
-            <img src="{{ asset('images/logo_footer.png') }}" alt="" class="logo_footer" />
-            <span class="copyright uppercase white">
+                <div class="clearfix"></div>
+                <hr/>
+                <img src="{{ asset('images/logo_footer.png') }}" alt="" class="logo_footer" />
+                <span class="copyright uppercase white">
                 &copy; wanderlust travel - 2015
             </span>
 
-            <div class="clearfix"></div>
-        </footer>
+                <div class="clearfix"></div>
+            </footer>
     </div>
 
     <!--script-->
 
     <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/scrollto.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js')}}"></script>
     <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
-    <!--<script type="text/javascript" src="{{ asset('js/script02.js') }}"></script>-->
+    <!--<script type="text/javascript" src="js/script02.js"></script>-->
 
 </body>
 

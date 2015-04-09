@@ -2,7 +2,7 @@ index:
     path:     /
     defaults: { _controller: PagesBundle:Pages:index }
 actualites:
-    path:     /actualites
+    path:     /actualitesIntro
     defaults: { _controller: PagesBundle:Pages:actualites }
     
 fiches_voyage:
@@ -12,3 +12,7 @@ fiches_voyage:
 carnet_de_bord:
     path:     /carnet_de_bord
     defaults: { _controller: PagesBundle:Pages:carnetdebord }
+
+actualites_suite:
+    path:     /actualites
+    defaults: { _controller: PagesBundle:Pages:actualitesSuite}
