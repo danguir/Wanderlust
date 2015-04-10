@@ -297,23 +297,23 @@ nav.navbar.mobile {
 /*.carousel-caption {top:30%;width:450px; height:130px;padding:25px;background:rgba(255, 188, 44, 0.8);margin: 0 auto;font-family: "Lato", sans-serif;text-shadow:none;font-weight:bold;z-index:9;}*/
 
 .carousel-caption h1 {
-    font-size: 48px;
-    color: #efefef;
+    font-size: 38px;
+    color: #efbc23;
     padding-bottom: 10px;
 }
 .carousel-caption {
-    top: 20%;
-    width: 350px;
-    height: 350px;
+    top: 25%;
+    width: 300px;
+    height: 300px;
     padding: 25px;
-    background: rgba(255, 188, 44, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     font-family: "Lato", sans-serif;
     text-shadow: none;
     font-weight: bold;
     z-index: 9;
     border-radius: 200px;
-    padding-top: 130px;
+    padding-top: 110px;
 }
 .carousel-indicators {
     bottom: 13% !important;
@@ -849,7 +849,7 @@ ul.nav-tabs .fa-book:before {
 
 .magazine {
     padding-top: 110px;
-    height: 780px;
+    height: 900px;
 }
 .magazine-cn {
     margin-top: 1px;
@@ -1115,39 +1115,45 @@ ul.nav-tabs .fa-book:before {
     min-height: 1250px;
     height: 100%;
 }
-.actualites .bloc_actu {
+.lire_articles {
+    margin: 40px auto 0;
+    display: block;
+    width: 240px;
+}
+/***************************/
+.actualites_suite {  padding: 150px 0 50px 0}
+.actualites_suite .bloc_actu {
     padding-bottom: 30px;
 }
-.actualites .ligne {
+.actualites_suite .ligne {
     padding-bottom: 15px;
 }
-.actualites h4 {
+.actualites_suite h4 {
     font-size: 24px;
     float: left;
     display: block;
 }
-.actualites p.date {
+.actualites_suite p.date {
     font-size: 16px;
     float: right;
     display: block;
 }
-.actualites p.extrait {
+.actualites_suite p.extrait {
     text-align: justify;
-    font-family: 'open sans';
     font-size: 14px;
     line-height: 17px;
 }
-.actualites a.comm {
+.actualites_suite a.comm {
     font-size: 14px;
     float: right;
     display: block;
     color: #666;
     text-decoration: none;
 }
-.actualites a.comm:hover {
+.actualites_suite a.comm:hover {
     text-decoration: underline;
 }
-.actualites .bt_filtre {
+.actualites_suite .bt_filtre {
     width: 100px;
     height: 25px;
     display: block;
@@ -1156,30 +1162,30 @@ ul.nav-tabs .fa-book:before {
     line-height: 22px;
     float: left;
 }
-.actualites .bt_filtre.decouverte {
+.actualites_suite .bt_filtre.decouverte {
     background: #0056a4;
 }
-.actualites .bt_filtre.ecologie {
+.actualites_suite .bt_filtre.ecologie {
     background: #0e9c33;
 }
-.actualites .bt_filtre.culture {
+.actualites_suite .bt_filtre.culture {
     background: #970d51;
 }
-.actualites .bt_filtre.conflits {
+.actualites_suite .bt_filtre.conflits {
     background: #fd6c0b;
 }
-.actualites .bt_filtre.technologie {
+.actualites_suite .bt_filtre.technologie {
     background: #a29e9e;
 }
-.actualites .bt_filtre.sante {
+.actualites_suite .bt_filtre.sante {
     background: #ea145b;
 }
-.actualites .bt_filtre.decouverte:hover,
-.actualites .bt_filtre.ecologie:hover,
-.actualites .bt_filtre.culture:hover,
-.actualites .bt_filtre.conflits:hover,
-.actualites .bt_filtre.technologie:hover,
-.actualites .bt_filtre.sante:hover {
+.actualites_suite .bt_filtre.decouverte:hover,
+.actualites_suite .bt_filtre.ecologie:hover,
+.actualites_suite .bt_filtre.culture:hover,
+.actualites_suite .bt_filtre.conflits:hover,
+.actualites_suite .bt_filtre.technologie:hover,
+.actualites_suite .bt_filtre.sante:hover {
     text-decoration: none;
     -webkit-transition: background-color 1000ms linear;
     -moz-transition: background-color 1000ms linear;
@@ -1187,25 +1193,25 @@ ul.nav-tabs .fa-book:before {
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
 }
-.actualites .bt_filtre.decouverte:hover {
+.actualites_suite .bt_filtre.decouverte:hover {
     background: #02294c;
 }
-.actualites .bt_filtre.ecologie:hover {
+.actualites_suite .bt_filtre.ecologie:hover {
     background-color: #014c10;
 }
-.actualites .bt_filtre.culture:hover {
+.actualites_suite .bt_filtre.culture:hover {
     background-color: #5c033d;
 }
-.actualites .bt_filtre.conflits:hover {
+.actualites_suite .bt_filtre.conflits:hover {
     background-color: #c95406;
 }
-.actualites .bt_filtre.technologie:hover {
+.actualites_suite .bt_filtre.technologie:hover {
     background-color: #5b5b5b;
 }
-.actualites .bt_filtre.sante:hover {
+.actualites_suite .bt_filtre.sante:hover {
     background-color: #960434;
 }
-.actualites a.lire_article {
+.actualites_suite a.lire_article {
     color: #333;
     font-family: "Lato";
     font-weight: 400;
@@ -1214,17 +1220,17 @@ ul.nav-tabs .fa-book:before {
     float: right;
     display: block;
 }
-.actualites a.lire_article .fa-angle-double-right {
+.actualites_suite a.lire_article .fa-angle-double-right {
     padding-left: 6px;
     color: #ffbc2c;
 }
-.actualites hr {
+.actualites_suite hr {
     margin-top: 0;
     border: 1px dotted #666666;
 }
-.actualites .bloc_newsletter,
-.actualites .new_carnet,
-.actualites .new_voyage {
+.actualites_suite .bloc_newsletter,
+.actualites_suite .new_carnet,
+.actualites_suite .new_voyage {
     background: #282828;
     font-size: 16px;
     font-family: "Lato";
@@ -1237,25 +1243,25 @@ ul.nav-tabs .fa-book:before {
     width: 296px;
     float: left;
 }
-.actualites .bloc_newsletter {
+.actualites_suite .bloc_newsletter {
     background: url('../images/bg_news_actu.jpg') no-repeat left top;
 }
-.actualites .bloc_newsletter p,
-.actualites .new_carnet p,
-.actualites .new_voyage p {
+.actualites_suite .bloc_newsletter p,
+.actualites_suite .new_carnet p,
+.actualites_suite .new_voyage p {
     padding-bottom: 20px;
 }
-.actualites .bloc_newsletter span,
-.actualites .new_carnet span,
-.actualites .new_voyage span {
+.actualites_suite .bloc_newsletter span,
+.actualites_suite .new_carnet span,
+.actualites_suite .new_voyage span {
     color: #ffbc2c;
     display: block;
     padding-bottom: 25px;
 }
-.actualites .newsletter_input {
+.actualites_suite .newsletter_input {
     margin-bottom: 36px;
 }
-.actualites .btn_inscription {
+.actualites_suite .btn_inscription {
     display: block;
     width: 120px;
     height: 28px;
@@ -1268,29 +1274,29 @@ ul.nav-tabs .fa-book:before {
     border: 0px;
     color: #282828;
 }
-.actualites .new_carnet,
-.actualites .new_voyage {
+.actualites_suite .new_carnet,
+.actualites_suite .new_voyage {
     height: 400px;
     position: relative;
     padding: 20px 0 0 0;
 }
-.actualites .new_voyage {
+.actualites_suite .new_voyage {
     height: 380px;
 }
-.actualites .new_carnet p {
+.actualites_suite .new_carnet p {
     padding: 0 15px;
 }
-.actualites .new_voyage p {
+.actualites_suite .new_voyage p {
     padding: 0 15px 20px 15px;
 }
-.actualites .new_carnet p a {
+.actualites_suite .new_carnet p a {
     font-style: italic;
     display: block;
     color: #999;
     padding: 5px 0 20px;
 }
-.actualites .new_carnet a.voir_suite,
-.actualites .new_voyage a.voir_suite {
+.actualites_suite .new_carnet a.voir_suite,
+.actualites_suite .new_voyage a.voir_suite {
     display: block;
     color: #ffbc2c;
     margin: 15px auto 0;
@@ -1298,29 +1304,29 @@ ul.nav-tabs .fa-book:before {
     top: 0;
     left: 0;
 }
-.actualites .btn_themes {
+.actualites_suite .btn_themes {
     margin: 0 auto;
     width: 660px;
     padding-bottom: 70px;
     display: block;
 }
-.actualites .btn_themes a {
+.actualites_suite .btn_themes a {
     margin-right: 10px;
 }
-.actualites .bloc_numerotation {
+.actualites_suite .bloc_numerotation {
     text-align: center;
     width: 100%;
     height: 50px;
 }
-.actualites .bloc_numerotation a {
+.actualites_suite .bloc_numerotation a {
     padding: 0 10px;
     color: #282828
 }
-.actualites .bloc_numerotation a:hover {
+.actualites_suite .bloc_numerotation a:hover {
     text-decoration: none;
     color: #ffbc2c;
 }
-.actualites .bloc_numerotation i {
+.actualites_suite .bloc_numerotation i {
     color: #ffbc2c;
     font-size: 18px;
     font-weight: bold;
@@ -1344,10 +1350,10 @@ ul.nav-tabs .fa-book:before {
 #carnet_voyages .title_voyage_slider {width:438px; height:130px;padding:25px; background:rgba(255, 188, 44, 0.8);display:block;margin:0 auto;position: absolute;z-index: 30;top: 250px;left: 35%; text-align:center;}
 #carnet_voyages .nom_pays {font-size:48px;}
 
-.carousel-caption h1 {font-size:48px; color:#efefef;  padding-bottom: 10px;}
-.carousel-caption {  top: 20%;width: 350px;height: 350px;padding: 25px;background: rgba(255, 188, 44, 0.8);margin: 0 auto;font-family: "Lato", sans-serif;text-shadow: none;font-weight: bold;z-index: 9;border-radius: 200px;  padding-top: 130px;}
-.carousel-indicators {bottom: 13% !important;z-index: 2;}
-.carousel.slide i.fa-angle-down{font-size: 80px;
+#carnet_voyages .carousel-caption h1 {font-size:48px; color:#efefef;  padding-bottom: 10px;}
+#carnet_voyages .carousel-caption {  top: 20%;width: 350px;height: 350px;padding: 25px;background: rgba(255, 188, 44, 0.8);margin: 0 auto;font-family: "Lato", sans-serif;text-shadow: none;font-weight: bold;z-index: 9;border-radius: 200px;  padding-top: 130px;}
+#carnet_voyages .carousel-indicators {bottom: 13% !important;z-index: 2;}
+#carnet_voyages .carousel.slide i.fa-angle-down{font-size: 80px;
     position: absolute;top: 70%;left: 48%;color: #efbc23;z-index: 9;}
 
 
@@ -2160,11 +2166,10 @@ section p {
     /* //////////////////////////////   Footer et médiaquery     */
 
 /* footer */
-
 footer {
-    min-height: 635px;
+    min-height: 445px;
     background: #282828 url('../images/bg_footer.png') left top no-repeat;
-    padding: 85px 85px 0 85px;
+    padding: 10px 85px 0 85px;
     display: block;
     width: 100%;
     position: relative;
@@ -2176,7 +2181,7 @@ footer .fleche_top {
     border-radius: 25px;
     margin: 0 auto;
     position: relative;
-    top: -100px;
+    top: -35px;
     left: 0;
     display: block;
 }
@@ -2358,6 +2363,7 @@ footer .fa-search {
     .carousel-caption h1 {
         font-size: 38px;
     }
+
     .right_block {
         display: block;
         clear: both;
