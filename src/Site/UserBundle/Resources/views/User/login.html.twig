@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<div class="col-lg-6 col-lg-offset-3">
+    <div class="panel panel-primary">
+      <div class="panel-heading"><h3 class="panel-title">Connexion</h3></div>
+      <div class="panel-body">
+          {{ form_start(form) }}
+          {{ form_row(form.username) }}
+          {{ form_row(form.password) }}
+      </div>
+      <div class="panel-footer" style="height:50px;">
+          <button type="submit" class="btn btn-success btn-sm pull-right">Connexion</button>
+          {{ form_rest(form) }}
+          {{ form_end(form) }}
+      </div>
+    </div>
+</div>
+{% endblock %}
