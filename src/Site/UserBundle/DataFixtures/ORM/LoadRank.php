@@ -1,12 +1,12 @@
 <?php
 
-namespace UserBundle\DataFixtures\ORM;
+namespace Site\UserBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 
-use UserBundle\Entity\Rank;
+use Site\UserBundle\Entity\Rank;
 
 class LoadRank extends AbstractFixture implements OrderedFixtureInterface {
 

@@ -1,3 +1,0 @@
-connexion_utilisateur:
-    path:     /
-    defaults: { _controller: UtilisateursBundle:Utilisateurs:connexion }

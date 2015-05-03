@@ -1,6 +1,6 @@
 <?php
 
-namespace UserBundle\Controller;
+namespace Site\UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -11,10 +11,10 @@ use AppBundle\Controller\AppController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-use UserBundle\Entity\User;
+use Site\UserBundle\Entity\User;
 
-use UserBundle\Form\LoginType;
-use UserBundle\Form\RegisterType;
+use Site\UserBundle\Form\LoginType;
+use Site\UserBundle\Form\RegisterType;
 
 /**
  * @Route("/user")
