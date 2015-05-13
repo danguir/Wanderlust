@@ -1,0 +1,33 @@
+{% extends '::admin.html.twig' %}
+{% block contenu %}
+<style>
+    input{
+        width:99%;
+    }
+    textarea{
+        width:99%;
+        height:200px;
+    }
+</style>
+{% if app.session.get('rang') == 'Administrateur' %}
+<div class="well"  id="nouveau">
+    <div class="row-fluid">
+        <div class="page-header"><h3>Ajouter une musique</h3></div>
+        <form style="float:none;margin:0 auto;" action="" method="POST">
+            <div class="row-fluid">
+                <div class="span6">
+                    {{ form_row(form.titre) }}
+                </div>     
+                <div class="span6">
+                    {{ form_row(form.telechargement, { 'attr': {'placeholder': 'nom_musique.extension' } }) }}
+                </div>
+            </div>
+                    {{ form_row(form.code) }}
+                    {{ form_row(form.description) }}
+    <div class="row-fluid">
+        <input type="submit" class="btn btn-primary" value="Envoyer" />
+        </form>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
