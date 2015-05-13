@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new Site\PagesBundle\PagesBundle(),
             new Site\UserBundle\UserBundle(),
             new Site\MediaBundle\MediaBundle(),
+            new Site\NewsBundle\newsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
