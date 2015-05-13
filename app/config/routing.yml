@@ -1,4 +1,8 @@
+media:
+    resource: "@MediaBundle/Resources/config/routing.yml"
+    prefix:   /media
+
 pages:
     resource: "@PagesBundle/Resources/config/routing.yml"
     prefix:   /
-
+ 
