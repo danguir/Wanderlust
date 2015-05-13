@@ -16,3 +16,7 @@ carnet_de_bord:
 actualites_suite:
     path:     /actualites
     defaults: { _controller: PagesBundle:Pages:actualitesSuite}
+
+valeur:
+    path:     /valeur
+    defaults: { _controller: PagesBundle:Pages:valeur}
