@@ -2,3 +2,7 @@ pages:
     resource: "@PagesBundle/Resources/config/routing.yml"
     prefix:   /
 
+media:
+    resource: "@MediaBundle/Resources/config/routing.yml"
+    prefix:   /media
+    

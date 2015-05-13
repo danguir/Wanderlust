@@ -1,0 +1,81 @@
+{% extends '::base.html.twig' %}
+{% block titre %}Pics{% endblock %}
+{% block css %}
+{{ parent() }}
+<style>
+        ul li{
+            list-style:none;
+        }
+        textarea{
+            width:98.5%;
+            height:200px;
+            resize:none;
+        }
+        input{
+            width:98.5%;
+        }
+</style>
+{% endblock %}
+
+{% block contenu %}
+{% include 'SitePageBundle:include:flash.html.twig' %}
+{% if photos is not null %}
+    <div class="well">
+        <div class="page-header"><h2>{{ album.nom }}<small> {% if app.session.get('rang') == 'Administrateur' %}<a href="{{ path('album_supprimer', { 'id': album.id }) }}"> Supprimer l'album</a> -{% endif %} <a href="{{ path('photos_liste', { 'id': album.id }) }}"> Liste des photos</a></small></h2></div>
+            <div id="carousel" class="carousel slide">
+                    <center><button id="pause" class="btn btn-inverse"><i class="icon-pause"></i> Pause</button>
+                    <button id="reprise" class="btn btn-inverse"><i class="icon-play"></i> Lecture</button></center><br /><br />
+                <ol class="carousel-indicators">
+                    {% for v in photos %}
+                        <li data-target="#carousel" data-slide-to="{{ loop.index0 }}" class="{% if loop.first %}active{% endif %}"></li>
+                    {% endfor %}
+                </ol>
+                <div class="carousel-inner">
+                    {% for v in photos %}
+                        <div class="{% if loop.first %}active {% endif %}item">
+                            <center><img src="{{ asset('albums/') }}{{ album.slug }}/{{ v }}" alt="{{ v }}" title="{{ v }}" style="max-height:600px;max-width:600px;margin-left:5px;margin-bottom:10px;" /></center>
+                        </div>
+                   {% endfor %}
+                </div>
+                    <a class="carousel-control left" data-slide="prev" href="#carousel">‹</a> 
+                    <a class="carousel-control right" data-slide="next" href="#carousel">›</a>
+            </div>
+    </div>
+    <div class="well">
+        <div class="page-header"><h2>Commenter l 'album</h2></div>
+        <div class="fb-comments" data-href="{{ path('album_editer', {'id': album.id } ) }}" data-width="900" data-num-posts="10" data-colorscheme="dark"></div>
+    </div>
+{% else %}
+    <div class="well">
+        <div class="page-header"><h2>{{ album.nom }}</h2></div> 
+        <center><p>Aucune image dans l'album {{ album.nom }}</p>
+        <p><a href="{{ path('album_editer') }}">Retourner à la liste des albums</a></p></center>
+    </div>
+{% endif %}
+<script>
+$(document).ready(function(){
+  $("#reprise").hide();
+  $("#pause").click(function(){
+    $("#reprise").show();
+    $("#pause").hide();
+  });
+  $("#reprise").click(function(){
+    $("#pause").show();
+    $("#reprise").hide();
+  });
+});
+$(function (){
+    $('.carousel').carousel({
+    interval: 4000  
+    });
+    $("#pause").click(function() {
+    $('.carousel').carousel('pause');
+    $('.label').text('Mode pause').removeClass("label-info").addClass("label-warning");
+    }); 
+    $("#reprise").click(function() {
+    $('.carousel').carousel('cycle');
+    $('.label').text('Mode cycle').removeClass("label-warning").addClass("label-info");
+    });
+});
+</script>
+{% endblock %}
