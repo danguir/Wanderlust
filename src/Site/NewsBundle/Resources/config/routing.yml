@@ -1,0 +1,22 @@
+news_editer:
+    pattern: /editer/{id}
+    defaults:  {_controller: SiteNewsBundle:News:editer, id: null }
+    requirements:
+      id: \d+
+
+news_liste:
+    pattern: /liste
+    defaults: {_controller: SiteNewsBundle:News:liste }
+
+news_liste_index:
+    pattern: /liste/index
+    defaults: {_controller: SiteNewsBundle:News:listeIndex }
+    requirements:
+      _method: internal
+
+news_supprimer:
+    pattern: /supprimer/{id}
+    defaults: {_controller: SiteNewsBundle:News:supprimer }
+    requirements:
+      id: \d+
+

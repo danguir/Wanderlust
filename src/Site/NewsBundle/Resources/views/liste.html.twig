@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+{% block titre %}Liste des news{% endblock %}
+{% block css %}
+{{ parent() }}
+<style>
+    ul li{
+        list-style: none;
+    }
+    textarea{
+        width: 100%;
+        height: 200px;
+        resize: none;
+    }
+    input{
+        width: 100%;
+    }
+    table{
+        width: 100%
+    }
+</style>
+{% endblock %}
+
+{% block contenu %}
+{% include 'SitePageBundle:include:flash.html.twig' %}
+<div class="well">
+    <div class="page-header"><h3>Liste des news {% if app.session.get('rang') == 'Administrateur' %}<small><a href="{{ path('news_editer') }}">Ajouter une news</a></small>{% endif %}</h3></div>
+    <div class="media">
+    {% for n in news %}
+        <div class="media-body">
+            <h4 class="media-heading">{{ n.titre }}<small> - Par {{ render(controller('SiteUtilisateurBundle:Utilisateur:colorisation', {'id': n.auteur.id})) }} Le {{ n.date|date('d/m/Y à G\\hi') }}
+            {% if app.session.get('rang') == 'Administrateur' %}
+                <a href="{{ path('news_supprimer',{ 'id': n.id}) }}"><i class="icon-remove icon-white"></i></a><a href="{{ path('news_editer',{ 'id': n.id}) }}"><i class="icon-pencil icon-white"></i></a>
+            {% endif %}</small></h4>            
+    		{{ n.contenu|raw }}
+    	</div>
+    {% else %}
+        <center><p>Aucune news actuellement</p></center>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

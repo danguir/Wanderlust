@@ -1,0 +1,14 @@
+{% block contenu %}
+{% include 'SitePageBundle:include:flash.html.twig' %}
+<div class="media">
+    {% for n in news %}
+        <div class="media-body">
+            <h4 class="media-heading">{{ n.titre }}<small> - Par {{ render(controller('SiteUtilisateurBundle:Utilisateur:colorisation', {'id': n.auteur.id})) }} Le {{ n.date|date('d/m/Y à G\\hi') }}
+            {% if app.session.get('rang') == 'Administrateur' %}
+            {% endif %}</small></h4><br />            
+            {{ n.contenu|raw }}
+            {% if loop.last == false %}<hr style="width:53%;border-bottom:1px solid gray;"/>{% endif %}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
