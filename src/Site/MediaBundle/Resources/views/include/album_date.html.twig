@@ -1,9 +1,0 @@
-{% for a in albums %}
-    {% if loop.first %}<div class="well"><h3>{{ a.annee.annee }}</h3>{% endif %}
-        {% if loop.index0 % 4 == 0 %}<div class="row-fluid">{% endif %}
-        <div class="span3">
-            <h4><a href="{{ path('photos', {'id': a.id } ) }}">{{ a.nom }}</a></h4>
-            <a href="{{ path('photos', {'id': a.id } ) }}"><img src="{% if a.couverture != 'Default.png' %}{{ asset('albums/') }}{{ a.slug }}/{% else %}{{ asset('img/') }}{% endif %}{{ a.couverture }}" alt="Photo de couverture" title="Photo de couverture" /></a>
-        </div>
-        {% if loop.index0 % 4 == 3 or loop.last %}</div>{% endif %}{% if loop.last %}</div>{% endif %}
-{% endfor %}
