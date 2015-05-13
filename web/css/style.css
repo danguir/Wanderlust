@@ -183,6 +183,65 @@ nav.navbar.desktop .btn_connexion {
 nav.navbar.mobile {
     display: none;
 }
+
+.sous-menu_voyages {
+    height: 378px;
+  display: block;
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 100%;
+  z-index: 250;
+}
+.sous-menu_voyages .col-md-8 {
+  background:#282828;  
+  height: 100%;
+  padding:48px 42px;
+}
+
+.sous-menu_voyages .col-md-6 div, .sous-menu_voyages .col-md-6 {
+    text-align:center;
+}
+
+.sous-menu_voyages .col-md-6 div, .sous-menu_voyages .col-md-6 img {
+    float:left;
+}
+.sous-menu_voyages .col-md-6 div {
+    padding-left:20px;
+}
+.sous-menu_voyages .col-md-6 div a{
+    display: block;
+  color: #282828;
+  background: #ffbc2c;
+  width: 160px;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+   margin: 0 auto 20px;  
+}
+.sous-menu_voyages .col-md-6 div a.galerie_nav {
+    background:none;
+    border:1px solid #ffbc2c;
+    color:#FFF;
+    margin:0 auto;
+}
+
+.sous-menu_voyages .col-md-4{
+    background: #FFF;
+    height:100%;
+}
+.sous-menu_voyages .col-md-8 h2 {
+    color:#FFFFFF;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.sous-menu_voyages .col-md-8 h3{
+    color:#CCC;
+    font-size:25px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
 /* Important styles */
 
 #toggle {
