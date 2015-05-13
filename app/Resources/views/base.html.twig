@@ -24,337 +24,358 @@
 
 
 <body>
-<div id="page">
-<div id="home_page" class="">
-<nav class="navbar navbar-fixed-top desktop">
-    <a href="#" class="logo"></a>
-    <ul>
-        <li class="uppercase"><a href="{{ path('index') }}" class="no_bg">accueil</a>
-        </li>
-        <li class="uppercase"><a href="#">voyages</a>
-        </li>
-        <li class="uppercase"><a href="#">carnets de voyages</a>
-        </li>
-        <li class="uppercase"><a href="{{ path('actualites') }}">actualités</a>
-        </li>
-        <li class="uppercase"><a href="#">contact</a>
-        </li>
-        <li class="uppercase"><a href="#" class="btn_connexion no_bg">connexion</a>
-        </li>
-    </ul>
-    <div class="clearfix"></div>
-</nav>
+    <div id="page">
+        <div id="home_page" class="">
+            <nav class="navbar navbar-fixed-top desktop">
+                <a href="#" class="logo"></a>
+                <ul>
+                    <li class="uppercase"><a href="{{ path('index') }}" class="no_bg">accueil</a>
+                    </li>
+                    <li class="uppercase">
+                        <a href="#">voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="#">carnets de voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="{{ path('actualites') }}">actualités</a>
+                    </li>
+                    <li class="uppercase"><a href="#">contact</a>
+                    </li>
+                    <li class="uppercase"><a href="#" class="btn_connexion no_bg">connexion</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
 
-<nav class="navbar navbar-fixed-top mobile">
-    <a href="#menu" id="toggle"><span></span></a>
-    <div class="clearfix"></div>
-    <ul>
-        <li class="uppercase"><a href="{{ path('index') }}" class="no_bg">accueil</a>
-        </li>
-        <li class="uppercase"><a href="#">voyages</a>
-        </li>
-        <li class="uppercase"><a href="#">carnets de voyages</a>
-        </li>
-        <li class="uppercase"><a href="{{ path('actualites') }}">actualités</a>
-        </li>
-        <li class="uppercase"><a href="#">contact</a>
-        </li>
-        <li class="uppercase"><a href="#" class="btn_connexion no_bg">connexion</a>
-        </li>
-    </ul>
-    <div class="clearfix"></div>
-</nav>
+            <nav class="navbar navbar-fixed-top mobile">
+                <a href="#menu" id="toggle"><span></span></a>
+                <div class="clearfix"></div>
+                <ul>
+                    <li class="uppercase"><a href="{{ path('index') }}" class="no_bg">accueil</a>
+                    </li>
+                    <li class="uppercase"><a href="#">voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="#">carnets de voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="{{ path('actualites') }}">actualités</a>
+                    </li>
+                    <li class="uppercase"><a href="#">contact</a>
+                    </li>
+                    <li class="uppercase"><a href="#" class="btn_connexion no_bg">connexion</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+            <div class="sous-menu_voyages">
+                <div class="col-md-8">
+                    <h2>NOS PROCHAINS VOYAGES</h2>
+                    <div class="col-md-6">
+                        <img src="{{ asset('images/vignette_ssmenu_01.jpg') }}" alt="" />
+                        <div>
+                            <h3>HIMALAYA</h3>
+                            <a href="#" class="fiche_voyage_nav">Fiche voyage</a>
+                            <a href="#" class="galerie_nav">Galerie</a>
+                        </div>
+                    </div>
+                     <div class="col-md-6">
 
-<header>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <a href="#nosvaleurs" class="fleche_bottom">
-            <i class="fa fa-angle-down"></i>
-        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+            </div>
+                        
+                        
+            <header>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <a href="#nosvaleurs" class="fleche_bottom">
+                        <i class="fa fa-angle-down"></i>
+                    </a>
 
 
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active"> <img src="{{ asset('images/hp_img_01.jpg') }}" alt="First slide" style="width:100%;">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>WANDERLUST</h1>
-                        <p class="white size_23 font-light">DES VOYAGES INOUBLIABLES</p>
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active"> <img src="{{ asset('images/hp_img_01.jpg') }}" alt="First slide" style="width:100%;">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>WANDERLUST</h1>
+                                    <p class="white size_23 font-light">DES VOYAGES INOUBLIABLES</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item"> <img src="{{ asset('images/hp_img_02.jpg') }}" alt="First slide" style="width:100%;">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>WANDERLUST</h1>
+                                    <p class="white size_23 font-light">REVENEZ TRANSFORMÉ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item"> <img src="{{ asset('images/hp_img_03.jpg') }}" alt="First slide" style="width:100%;">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>WANDERLUST</h1>
+                                    <p class="white size_23 font-light">UNE EXPERIENCE UNIQUE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="clearfix"></div>
+
+            <div id="nosvaleurs">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{ asset('images/humanite.jpg') }}" alt="" />
+                        <h2>HUMANITÉ</h2>
+                        <p>
+                            Ressentez votre humanité grâce à <br/>
+                            la rencontre de nouvelles cultures <br/>
+                            et comportements
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{{ asset('images/decouverte.jpg') }}" alt="" />
+                        <h2>D&Eacute;COUVERTE  </h2>
+                        <p>
+                            Vous pourrez alors enrichir votre <br/>
+                            savoir humain et naturel à travers <br/>
+                            l’exploration de nouvelles terres<br/>
+                            inconnues
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{{ asset('images/voyage.jpg') }}" alt="" />
+                        <h2>VOYAGE</h2>
+                        <p>
+                            Laissez vous transporter vers de <br/>
+                            nouveaux horizons aux paysages<br/>
+                            saisissants
+                        </p>
+                    </div>
+                </div>
+                <a href="{{ path('valeur') }}" class="hp_btn_decouvrir_voyage">DÉCOUVRIR NOS VALEURS</a>
+            </div>
+            <div id="slide1">
+
+                <div class="slide_inside">
+                    <h2>
+                        NOS VOYAGES
+                    </h2>
+
+                </div> <!--.slide_inside-->
+
+            </div> <!--#slide1-->
+
+            <div class="voyages_hp">
+                <div class="row voyage01">
+                    <div class="col-md-8">
+                        <h3>Himalaya</h3>
+                        <p>
+                            La demeure des neiges vous accueille au Népal pour un
+                            voyage rempli d’émerveillement et de fraîcheur. Découvrez
+                            parmi ses sommets vertigineux Un peuple aux joies et cultures atypiques.
+                        </p>
+                        <a href="#" class="decouvrir_carnet">D&Eacute;COUVRIR CE VOYAGE</a>
+                        <a href="#" class="decouvrir_galerie"><i class="fa fa-camera"></i> VOIR LA GALERIE</a>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row voyage02">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <h3>Sahara</h3>
+                        <p>
+                            Traversée du désert en chameau à travers les
+                            grandes étendues arrides du Sahara.<br/>
+                            Surpassez vos limites d’exploration là où
+                            la nature reste maître du jeu
+                        </p>
+                        <a href="#" class="decouvrir_carnet">D&Eacute;COUVRIR CE VOYAGE</a>
+                        <a href="#" class="decouvrir_galerie"><i class="fa fa-camera"></i> VOIR LA GALERIE</a>
                     </div>
                 </div>
             </div>
-            <div class="item"> <img src="{{ asset('images/hp_img_02.jpg') }}" alt="First slide" style="width:100%;">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>WANDERLUST</h1>
-                        <p class="white size_23 font-light">REVENEZ TRANSFORMÉ</p>
+            <div id="slide2">
+
+                <div class="slide_inside">
+
+                    <h2>
+                        CARNETS DE VOYAGES
+                    </h2>
+
+                </div> <!--.slide_inside-->
+
+            </div> <!--#slide2-->
+            <div class="clearfix"></div>
+            <div class="hp_extraits_carnet">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="carousel-caption">
+                                <img src="{{ asset('images/img_extrait_01.png') }}" alt="" />
+                                <h3>Madagascar : retour aux sources</h3>
+                                <p>
+                                    <a href="#">Adam Tosco</a>
+                                    « Voici l’encens que l’on diffuse dans les majsons à Madagascar, il sert à faire
+                                    fuir les mauvais esprits et il rendrait les femmes très fertiles afin de créer de beaux enfants forts.<br/>
+                                    On se le procure au village par les chefs marabouts...»
+                                </p>
+                                <a href="#" class="uppercase txt_yellow">voir ce carnet de voyage</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <img src="{{ asset('images/img_extrait_02.png') }}" alt="" />
+                                <h3>Pérou : un voyage parfait</h3>
+                                <p>
+                                    <a href="#">Éléonore Lefluve</a>
+                                    "Un voyage de rêve en grande partie grâce à cette agence et à ceux qui nous ont accueili sur place. Nous nous sommes toujours senti en sécurité et écouté. C'est un pays magnifique, où nous avons fait des nombreuses rencontres et expéditions..."
+                                </p>
+                                <a href="#" class="uppercase txt_yellow">voir ce carnet de voyage</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="arrow-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="arrow-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="slide3">
+
+                <div class="slide_inside">
+
+                    <h2>
+                        ACTUALIT&Eacute;
+                    </h2>
+
+                </div> <!--.slide_inside-->
+
+            </div>
+            <div class="hp_actu">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{ asset('images/img_actu_01.jpg') }}" alt="" />
+                        <h2>La Holi en Inde</h2>
+                        <span class="date">01 Mars 2015</span>
+                        <p>
+                            Plus connue sous le nom de «fêtes des couleurs», la Holi sera célébrée  à partir du 19 Mars prochain.
+                            Cet évènement se déroule durant deux jours de pleine lune et il est  dédié à deux divinités, Krishna et Kâma...
+                        </p>
+                        <a href="#">Lire cet article</a>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{{ asset('images/img_actu_02.jpg') }}" alt="" />
+                        <h2>Les loups de Mongolie </h2>
+                        <span class="date">27 Fév. 2015</span>
+                        <p>
+                            C’est la première fois que des loups de Mongolie ont dû être imprégnés  pour le cinéma. «On ne savait pas si  ça allait marcher, mais je voulais  absolument des loups mongols, qui sont d’un pelage un peu brun, la  couleur dominante de la steppe de septembre à juin....»
+                        </p>
+                        <a href="#">Lire cet article</a>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{{ asset('images/img_actu_03.jpg') }}" alt="" />
+                        <h2>Le voyage du sable</h2>
+                        <span class="date">24 Fév. 2015</span>
+                        <p>
+                            Une étude de la NASA dévoile le  voyage que fait le sable porté par le vent, du désert du Sahara à la  forêt amazonienne. Chaque année, près de 182 millions de tonnes de sable s'envolent et traversent l'Atlantique..
+                        </p>
+                        <a href="#">Lire cet article</a>
                     </div>
                 </div>
             </div>
-            <div class="item"> <img src="{{ asset('images/hp_img_03.jpg') }}" alt="First slide" style="width:100%;">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>WANDERLUST</h1>
-                        <p class="white size_23 font-light">UNE EXPERIENCE UNIQUE</p>
+
+
+
+            <!-- FOOTER -->
+
+
+            <div class="clearfix"></div>
+            <footer>
+                <a href="#" class="fleche_top"></a>
+                <ul class="footer_liens col-md-4 col-sm-3">
+                    <li><a href="#" class="uppercase white">accueil</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">voyages</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">carnets de voyages</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">actualité</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">contact</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">connexion</a>
+                    </li>
+                </ul>
+                <ul class="footer_liens col-md-4 col-sm-3">
+                    <li><a href="#" class="uppercase white">nos valeurs</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">nos conditions d'utilisation</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">mentions légales</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">politique</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">presse</a>
+                    </li>
+                </ul>
+                <div class="col-md-4 col-xs-12 col-sm-3">
+                    <form class="newsletter_inscription">
+                        <h4 class="bold size_20 txt_yellow uppercase">
+                            suivez nos aventures
+                        </h4>
+                        <input type="text" class="newsletter_input" value="" placeholder="Entrez votre email" />
+                        <input type="submit" class="btn_inscription" value="S'inscrire" />
+                    </form>
+                    <div class="reseaux_sociaux">
+                        <a href="#" target="_blank" class="rs-link facebook">
+                            <img src="{{ asset('images/icone_facebook.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link twitter">
+                            <img src="{{ asset('images/icone_twitter.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link googleplus">
+                            <img src="{{ asset('images/icone_google.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link youtube">
+                            <img src="{{ asset('images/icone_youtube.png') }}" alt="" />
+                        </a>
                     </div>
+                    <img src="{{ asset('images/modepaiement.png') }}" alt="" class="mode_paiement" />
                 </div>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="clearfix"></div>
-
-<div id="nosvaleurs">
-    <div class="row">
-        <div class="col-md-4">
-            <img src="{{ asset('images/humanite.jpg') }}" alt="" />
-            <h2>HUMANITÉ</h2>
-            <p>
-                Ressentez votre humanité grâce à <br/>
-                la rencontre de nouvelles cultures <br/>
-                et comportements
-            </p>
-        </div>
-        <div class="col-md-4">
-            <img src="{{ asset('images/decouverte.jpg') }}" alt="" />
-            <h2>D&Eacute;COUVERTE  </h2>
-            <p>
-                Vous pourrez alors enrichir votre <br/>
-                savoir humain et naturel à travers <br/>
-                l’exploration de nouvelles terres<br/>
-                inconnues
-            </p>
-        </div>
-        <div class="col-md-4">
-            <img src="{{ asset('images/voyage.jpg') }}" alt="" />
-            <h2>VOYAGE</h2>
-            <p>
-                Laissez vous transporter vers de <br/>
-                nouveaux horizons aux paysages<br/>
-                saisissants
-            </p>
-        </div>
-    </div>
-    <a href="{{ path('valeur') }}" class="hp_btn_decouvrir_voyage">DÉCOUVRIR NOS VALEURS</a>
-</div>
-<div id="slide1">
-
-    <div class="slide_inside">
-        <h2>
-            NOS VOYAGES
-        </h2>
-
-    </div> <!--.slide_inside-->
-
-</div> <!--#slide1-->
-
-<div class="voyages_hp">
-    <div class="row voyage01">
-        <div class="col-md-8">
-            <h3>Himalaya</h3>
-            <p>
-                La demeure des neiges vous accueille au Népal pour un
-                voyage rempli d’émerveillement et de fraîcheur. Découvrez
-                parmi ses sommets vertigineux Un peuple aux joies et cultures atypiques.
-            </p>
-            <a href="#" class="decouvrir_carnet">D&Eacute;COUVRIR CE VOYAGE</a>
-            <a href="#" class="decouvrir_galerie"><i class="fa fa-camera"></i> VOIR LA GALERIE</a>
-        </div>
-        <div class="col-md-4"></div>
-    </div>
-    <div class="row voyage02">
-        <div class="col-md-4"></div>
-        <div class="col-md-8">
-            <h3>Sahara</h3>
-            <p>
-                Traversée du désert en chameau à travers les
-                grandes étendues arrides du Sahara.<br/>
-                Surpassez vos limites d’exploration là où
-                la nature reste maître du jeu
-            </p>
-            <a href="#" class="decouvrir_carnet">D&Eacute;COUVRIR CE VOYAGE</a>
-            <a href="#" class="decouvrir_galerie"><i class="fa fa-camera"></i> VOIR LA GALERIE</a>
-        </div>
-    </div>
-</div>
-<div id="slide2">
-
-    <div class="slide_inside">
-
-        <h2>
-            CARNETS DE VOYAGES
-        </h2>
-
-    </div> <!--.slide_inside-->
-
-</div> <!--#slide2-->
-<div class="clearfix"></div>
-<div class="hp_extraits_carnet">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <div class="carousel-caption">
-                    <img src="{{ asset('images/img_extrait_01.png') }}" alt="" />
-                    <h3>Madagascar : retour aux sources</h3>
-                    <p>
-                        <a href="#">Adam Tosco</a>
-                        « Voici l’encens que l’on diffuse dans les majsons à Madagascar, il sert à faire
-                        fuir les mauvais esprits et il rendrait les femmes très fertiles afin de créer de beaux enfants forts.<br/>
-                        On se le procure au village par les chefs marabouts...»
-                    </p>
-                    <a href="#" class="uppercase txt_yellow">voir ce carnet de voyage</a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="carousel-caption">
-                    <img src="{{ asset('images/img_extrait_02.png') }}" alt="" />
-                    <h3>Pérou : un voyage parfait</h3>
-                    <p>
-                        <a href="#">Éléonore Lefluve</a>
-                        "Un voyage de rêve en grande partie grâce à cette agence et à ceux qui nous ont accueili sur place. Nous nous sommes toujours senti en sécurité et écouté. C'est un pays magnifique, où nous avons fait des nombreuses rencontres et expéditions..."
-                    </p>
-                    <a href="#" class="uppercase txt_yellow">voir ce carnet de voyage</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="arrow-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="arrow-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
-
-
-<div id="slide3">
-
-    <div class="slide_inside">
-
-        <h2>
-            ACTUALIT&Eacute;
-        </h2>
-
-    </div> <!--.slide_inside-->
-
-</div>
-<div class="hp_actu">
-    <div class="row">
-        <div class="col-md-4">
-            <img src="{{ asset('images/img_actu_01.jpg') }}" alt="" />
-            <h2>La Holi en Inde</h2>
-            <span class="date">01 Mars 2015</span>
-            <p>
-                Plus connue sous le nom de «fêtes des couleurs», la Holi sera célébrée  à partir du 19 Mars prochain.
-                Cet évènement se déroule durant deux jours de pleine lune et il est  dédié à deux divinités, Krishna et Kâma...
-            </p>
-            <a href="#">Lire cet article</a>
-        </div>
-        <div class="col-md-4">
-            <img src="{{ asset('images/img_actu_02.jpg') }}" alt="" />
-            <h2>Les loups de Mongolie </h2>
-            <span class="date">27 Fév. 2015</span>
-            <p>
-                C’est la première fois que des loups de Mongolie ont dû être imprégnés  pour le cinéma. «On ne savait pas si  ça allait marcher, mais je voulais  absolument des loups mongols, qui sont d’un pelage un peu brun, la  couleur dominante de la steppe de septembre à juin....»
-            </p>
-            <a href="#">Lire cet article</a>
-        </div>
-        <div class="col-md-4">
-            <img src="{{ asset('images/img_actu_03.jpg') }}" alt="" />
-            <h2>Le voyage du sable</h2>
-            <span class="date">24 Fév. 2015</span>
-            <p>
-                Une étude de la NASA dévoile le  voyage que fait le sable porté par le vent, du désert du Sahara à la  forêt amazonienne. Chaque année, près de 182 millions de tonnes de sable s'envolent et traversent l'Atlantique..
-            </p>
-            <a href="#">Lire cet article</a>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- FOOTER -->
-
-
-<div class="clearfix"></div>
-<footer>
-    <a href="#" class="fleche_top"></a>
-    <ul class="footer_liens col-md-4 col-sm-3">
-        <li><a href="#" class="uppercase white">accueil</a>
-        </li>
-        <li><a href="#" class="uppercase white">voyages</a>
-        </li>
-        <li><a href="#" class="uppercase white">carnets de voyages</a>
-        </li>
-        <li><a href="#" class="uppercase white">actualité</a>
-        </li>
-        <li><a href="#" class="uppercase white">contact</a>
-        </li>
-        <li><a href="#" class="uppercase white">connexion</a>
-        </li>
-    </ul>
-    <ul class="footer_liens col-md-4 col-sm-3">
-        <li><a href="#" class="uppercase white">nos valeurs</a>
-        </li>
-        <li><a href="#" class="uppercase white">nos conditions d'utilisation</a>
-        </li>
-        <li><a href="#" class="uppercase white">mentions légales</a>
-        </li>
-        <li><a href="#" class="uppercase white">politique</a>
-        </li>
-        <li><a href="#" class="uppercase white">presse</a>
-        </li>
-    </ul>
-    <div class="col-md-4 col-xs-12 col-sm-3">
-        <form class="newsletter_inscription">
-            <h4 class="bold size_20 txt_yellow uppercase">
-                suivez nos aventures
-            </h4>
-            <input type="text" class="newsletter_input" value="" placeholder="Entrez votre email" />
-            <input type="submit" class="btn_inscription" value="S'inscrire" />
-        </form>
-        <div class="reseaux_sociaux">
-            <a href="#" target="_blank" class="rs-link facebook">
-                <img src="{{ asset('images/icone_facebook.png') }}" alt="" />
-            </a>
-            <a href="#" target="_blank" class="rs-link twitter">
-                <img src="{{ asset('images/icone_twitter.png') }}" alt="" />
-            </a>
-            <a href="#" target="_blank" class="rs-link googleplus">
-                <img src="{{ asset('images/icone_google.png') }}" alt="" />
-            </a>
-            <a href="#" target="_blank" class="rs-link youtube">
-                <img src="{{ asset('images/icone_youtube.png') }}" alt="" />
-            </a>
-        </div>
-        <img src="{{ asset('images/modepaiement.png') }}" alt="" class="mode_paiement" />
-    </div>
-    <div class="clearfix"></div>
-    <hr/>
-    <img src="{{ asset('images/logo_footer.png') }}" alt="" class="logo_footer" />
+                <div class="clearfix"></div>
+                <hr/>
+                <img src="{{ asset('images/logo_footer.png') }}" alt="" class="logo_footer" />
                 <span class="copyright uppercase white">
-                &copy; wanderlust travel - 2015
-            </span>
+                    &copy; wanderlust travel - 2015
+                </span>
 
-    <div class="clearfix"></div>
-</footer>
-</div>
-</div>
+                <div class="clearfix"></div>
+            </footer>
+        </div>
+    </div>
 
-<!--script-->
+    <!--script-->
 
-<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/scrollto.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/scrollto.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
 
 
 </body>
