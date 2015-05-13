@@ -31,4 +31,9 @@ class PagesController extends Controller
     {
         return $this->render('PagesBundle::actualites_suite.html.twig');
     }
+
+    public function valeurAction()
+    {
+        return $this->render('PagesBundle::valeur.html.twig');
+    }
 }

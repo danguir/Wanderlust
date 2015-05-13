@@ -216,6 +216,117 @@ nav.navbar.mobile {
     backface-visibility: hidden;
     border-radius: 2px;
 }
+
+
+#home_page .row{margin:0;}
+#nosvaleurs { min-height:620px;background: #FFF; padding-top:90px; height:auto;}
+#nosvaleurs .col-md-4 {text-align:center;}
+#nosvaleurs .col-md-4 img {margin-bottom:50px;}
+#nosvaleurs .col-md-4 h2 {font-weight: normal;font-size:20px;margin-bottom:45px;}
+#nosvaleurs .col-md-4 p {font-size:15px;line-height:25px;}
+#nosvaleurs a.hp_btn_decouvrir_voyage {font-size:17px;border:2px #000 solid; border-radius:5px;width:345px;height:62px;margin:0 auto;display:block;text-align:center;line-height:62px;color:#000;  margin-top: 60px;}
+#nosvaleurs a.hp_btn_decouvrir_voyage:hover {text-decoration:none;}
+
+
+.voyages_hp .row {height:403px;}
+.voyages_hp .col-md-8 {background:#282828;height:403px;border-bottom:solid 5px #ffb625;padding:70px 0 0 55px;}
+.voyages_hp .col-md-8 h3 {font-weight:bold;color:#FFF;font-size:30px;padding-bottom: 25px;}
+.voyages_hp .col-md-8 p {color:#FFF;font-size:15px;text-align:justify;width:475px;line-height:25px;margin-bottom:60px;}
+.voyages_hp .col-md-8 a {font-size:14px;border:2px #FFF solid; border-radius:5px;width:228px;height:44px;margin:0 auto;display:block;text-align:center;line-height:44px;color:#FFF;float:left;margin-right:30px;}
+.voyages_hp .col-md-8 a:hover {text-decoration:none;}
+.voyages_hp .col-md-8 .decouvrir_galerie  {width:232px;height:46px;line-height:46px;color:#282828;background:#FFF;border:none;margin-right:0;position:relative;}
+.voyages_hp .col-md-8 .decouvrir_galerie .fa {font-size:1.8em;position:absolute;left:20px;top:10px;}
+.voyages_hp .col-md-8 .decouvrir_carnet:hover {}
+.voyages_hp .col-md-8 .decouvrir_galerie:hover {}
+.voyages_hp .col-md-4 {background: url('../images/img_voyage_01.jpg') left top no-repeat;height:403px;  background-size: 100% 100%;}
+.voyages_hp .voyage02 .col-md-4 {background: url('../images/img_voyage_02.jpg') left top no-repeat;height:403px;  background-size: 100% 100%;}
+
+
+.hp_actu {min-height:672px;padding-top:75px;height:auto;}
+.hp_actu .col-md-4 {text-align:center;}
+.hp_actu .col-md-4 h2 {color:#ffc736;font-size:26px;padding:34px 0 14px;}
+.hp_actu span.date {font-style:italic;padding-bottom:18px;}
+.hp_actu span.date::after {content:""; width:270px;height:1px;background:#282828;display:block;  margin: 18px auto 0;}
+.hp_actu p {padding-top:18px;width:270px;text-align:justify;margin:0 auto;line-height:20px;height:205px;}
+.hp_actu .col-md-4 a {width:164px;height:35px;display:block;margin:0 auto;background:#ffc736;border-radius:5px;color:#FFF;line-height:35px;}
+
+
+.hp_extraits_carnet {min-height:580px;height:auto;background:#282828;width:100%;border-bottom:5px solid #ffc736;}
+
+.hp_extraits_carnet .arrow_prev {width:23px;height:38px;display:block;background: url('../images/prev.png') left top no-repeat;}
+
+#carousel-example-generic .carousel-inner{width:100%;min-height:580px;height:auto;}
+#carousel-example-generic .arrow-left {width:23px;height:38px;background: url('../images/prev.png') no-repeat top left; position: absolute;
+    top: 20%;
+    z-index: 20;
+    display: inline-block;left:48%;}
+#carousel-example-generic .arrow-right {width:23px;height:38px;background: url('../images/next.png') no-repeat top left; position: absolute;
+    top: 20%;
+    z-index: 20;
+    display: inline-block;}
+
+#carousel-example-generic .carousel-caption h3 {font-size:30px;font-weight:300;padding:40px 0;}
+#carousel-example-generic .carousel-caption p {font-weight:300;font-size:18px;line-height:22px;padding-bottom:45px;}
+#carousel-example-generic .carousel-caption p a {color:#FFF;text-decoration: underline; font-style: italic;display:block;   padding-bottom:30px;}
+#carousel-example-generic .carousel-caption {
+    top: 0;
+    width: 750px;
+    height: 100%;
+    padding: 0;
+    background: none;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    text-shadow: none;
+    font-weight: normal;
+    z-index: 9;
+    border-radius: none;
+    padding-top: 54px;
+}
+#carousel-example-generic .carousel-control {width: 48%;}
+#carousel-example-generic .carousel-caption a.uppercase.txt_yellow { width:316px;height:62px;text-align: center; line-height:62px;margin:0 auto; display:block;border:2px solid #ffc736;border-radius:5px;}
+
+#carousel-example-generic .carousel-caption a.uppercase.txt_yellow:hover {color:#ffc736; text-decoration: none;}
+/* galerie */
+
+/********************HP*******************/
+/* Mise en place des différentes parties / slides */
+#slide1, #slide2, #slide3 {
+    height: 385px;
+    padding-top:200px;
+}
+
+#slide1 {
+    background:url(../images/slide1-bg.jpg) center 0 no-repeat fixed;
+    background-size: 100% auto;
+}
+
+#slide2 {
+    background: url(../images/slide2-bg.jpg) center 0 no-repeat fixed;
+    background-size: 100% auto;
+}
+
+#slide3 {
+    background: url(../images/slide3-bg.jpg) center 0 no-repeat fixed;
+    background-size: 100% auto;
+}
+
+/* Gestion du contenu */
+.slide_inside {
+    width: 980px;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.slide_inside h2 {color:#FFF;font-size:52px;font-weight:bold;}
+
+
+
+
+
+
+
+
+
 /* on activation */
 
 #toggle.on span {
