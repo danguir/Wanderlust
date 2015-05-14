@@ -26,15 +26,17 @@
 <body>
     <div id="page">
         <div id="home_page" class="">
+            
+            <!-- faire un include de cette partie commune -->
             <nav class="navbar navbar-fixed-top desktop">
                 <a href="#" class="logo"></a>
                 <ul>
                     <li class="uppercase"><a href="{{ path('index') }}" class="no_bg">accueil</a>
                     </li>
-                    <li class="uppercase">
+                    <li class="uppercase submenu_voyage">
                         <a href="#">voyages</a>
                     </li>
-                    <li class="uppercase"><a href="#">carnets de voyages</a>
+                    <li class="uppercase submenu_carnets"><a href="#">carnets de voyages</a>
                     </li>
                     <li class="uppercase"><a href="{{ path('actualites') }}">actualités</a>
                     </li>
@@ -65,7 +67,9 @@
                 </ul>
                 <div class="clearfix"></div>
             </nav>
-            <div class="sous-menu_voyages">
+                    
+            <!-- sous menu hover voyage -->
+            <div class="sous-menu_voyages sub-menu">
                 <div class="col-md-8">
                     <h2>NOS PROCHAINS VOYAGES</h2>
                     <div class="col-md-6">
@@ -77,15 +81,86 @@
                         </div>
                     </div>
                      <div class="col-md-6">
-
+                        <img src="{{ asset('images/vignette_ssmenu_02.jpg') }}" alt="" />
+                        <div>
+                            <h3>GROENLAND</h3>
+                            <a href="#" class="fiche_voyage_nav">Fiche voyage</a>
+                            
+                            <a href="#" class="galerie_nav">Galerie</a>
+                        </div>
                     </div>
+                        <div class="clearfix"></div>
+                    <a href="#" class="tous_voyages"> voir tous nos voyages</a>
                 </div>
                 <div class="col-md-4">
-                    
+                    <h3>
+                        La séléction<br/>
+                        Carnets de voyages du mois
+                    </h3>
+                    <p class="carnet01">
+                        <span class="titre">ARGENTINE</span><br/>
+                        "Le rêve absolue"<br/>
+                        <span class="auteur">Par Marion Laval</span><br/>
+                        <a href="#">Voir ce carnet</a>
+                    </p>
+                    <p class="carnet02">
+                        <span class="titre">MADAGASCAR</span><br/>
+                        "Un voyage innatendu"<br/>
+                        <span class="auteur">Par Marianne Levaux</span><br/>
+                        <a href="#">Voir ce carnet</a>
+                    </p>
                 </div>
             </div>
-                        
-                        
+            <!-- fin sous menu hover voyage--> 
+            
+            <!-- sous menu hover carnets -->
+            <div class="sous-menu_carnets sub-menu">
+                <div class="col-md-8">
+                    <h2>NOS CARNETS VOYAGES</h2>
+                    <div class="col-md-6">
+                        <img src="{{ asset('images/img_extrait_01.png') }}" alt="" />
+                        <div>
+                            <h3>MADAGASCAR</h3>
+                            <span>Retour aux sources</span><br/>
+                            <span class="auteur">Par Adam Tosco</span>
+                            <a href="#" class="fiche_voyage_nav">Voir le carnet</a>
+                        </div>
+                    </div>
+                     <div class="col-md-6">
+                        <img src="{{ asset('images/img_extrait_02.png') }}" alt="" />
+                        <div>
+                            <h3>PÉROU</h3>
+                             <span>Un voyage parfait</span><br/>
+                             <span class="auteur">Par Eléonore Lefluve</span>
+                            <a href="#" class="fiche_voyage_nav">Voir le carnet</a>
+                        </div>
+                    </div>
+                        <div class="clearfix"></div>
+                    <a href="#" class="tous_voyages"> voir tous nos carnets</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        La séléction<br/>
+                        Carnets de voyages du mois
+                    </h3>
+                    <p class="carnet01">
+                        <span class="titre">ARGENTINE</span><br/>
+                        "Le rêve absolue"<br/>
+                        <span class="auteur">Par Marion Laval</span><br/>
+                        <a href="#">Voir ce carnet</a>
+                    </p>
+                    <p class="carnet02">
+                        <span class="titre">MADAGASCAR</span><br/>
+                        "Un voyage innatendu"<br/>
+                        <span class="auteur">Par Marianne Levaux</span><br/>
+                        <a href="#">Voir ce carnet</a>
+                    </p>
+                </div>
+            </div>
+            <!-- fin sous menu hover carnets--> 
+            <!-- fin de la partie commune à mettre en include -->    
+            
+            
             <header>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <a href="#nosvaleurs" class="fleche_bottom">
