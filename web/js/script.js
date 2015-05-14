@@ -30,14 +30,70 @@
 
         /* voyage hover */
 
-        $('.inclus_vol').hover(function() {
+       /* $('.inclus_vol').hover(function() {
             $('.info_inclus').toggleClass('bloc_block');
-        });
+        });*/
 
         $('#myCarousel a').on('click', function() {
             $.scrollTo($(this).attr("href"), "slow");
             return false;
         });
+        
+        function hide() {
+           $('.sub-menu').mouseover(function(){
+                $(this).css("display","block");
+           });
+           $('.sub-menu').mouseout(function(){
+                $(this).css("display","none");
+                $('.navbar li').removeClass('active_li');
+            });
+            $('.sous-menu_voyages').mouseover(function(){
+                 $('.submenu_voyage').addClass('active_li');
+             });
+             $('.sous-menu_carnets').mouseover(function() {
+               $('.submenu_carnets').addClass('active_li');
+            });
+            $('.submenu_voyage, .submenu_carnets').mouseout(function(){
+                $(this).removeClass('active_li');
+            });
+            
+             
+        };
+        
+        $('.submenu_voyage').mouseover(function(){
+            $('.sous-menu_voyages').css("display","block");
+            $('.sous-menu_carnets').css("display","none");
+            $(this).addClass('active_li');
+            $('.submenu_carnets').removeClass('active_li');
+            hide();
+        });
+        
+        $('.submenu_carnets').mouseover(function(){ 
+            $('.sous-menu_carnets').css("display","block");
+            $('.sous-menu_voyages').css("display","none");
+            $(this).addClass('active_li');
+            $('.submenu_voyage').removeClass('active_li');
+            hide();
+            
+        });
+        
+           /* $('.navbar ul > li:has(.sub-menu)').hoverIntent(showMenu,hideMenu);
+		
+		function showMenu() {
+			$(this).addClass('active_li');
+			$(this).find('.sub-menu').stop(false,true).fadeIn(200);
+		};
+		
+		function hideMenu() {
+			$(this).removeClass('active_li');
+			$(this).find('.sub-menu').fadeOut(200);
+		};*/
+
+        
+        
+
+        
+        
         
         
 
