@@ -157,7 +157,23 @@ nav.navbar.desktop ul {
     padding-right: 40px;
 }
 nav.navbar.desktop ul li {
-    display: inline;
+      display: inline-block;
+        height: 100%;
+        position:relative;
+}
+
+nav.navbar.desktop ul li.active_li::after {
+                content:"";
+		position:absolute;
+		left:40%;
+		bottom:0;
+		border-width:0 10px 10px;
+		border-style:solid;
+		border-color:transparent transparent #ffbc2c;
+		display:block;
+		width:0;
+		z-index:999;
+                display:block;
 }
 nav.navbar.desktop ul li a {
     color: #FFFFFF;
@@ -184,64 +200,144 @@ nav.navbar.mobile {
     display: none;
 }
 
-.sous-menu_voyages {
-    height: 378px;
+.sous-menu_voyages, .sous-menu_carnets {
+  height: 378px;
   display: block;
   position: absolute;
   top: 85px;
   left: 0;
   width: 100%;
   z-index: 250;
+  border-top: 4px solid #ffcb24;
+  display:none;
 }
-.sous-menu_voyages .col-md-8 {
+
+.sous-menu_voyages .col-md-8, .sous-menu_carnets .col-md-8 {
   background:#282828;  
   height: 100%;
   padding:48px 42px;
 }
 
-.sous-menu_voyages .col-md-6 div, .sous-menu_voyages .col-md-6 {
+.sous-menu_voyages .col-md-6 div, .sous-menu_voyages .col-md-6, 
+.sous-menu_carnets .col-md-6 div, .sous-menu_carnets .col-md-6 {
     text-align:center;
 }
 
-.sous-menu_voyages .col-md-6 div, .sous-menu_voyages .col-md-6 img {
+.sous-menu_voyages .col-md-6 div, .sous-menu_voyages .col-md-6 img, 
+.sous-menu_carnets .col-md-6 div, .sous-menu_carnets .col-md-6 img {
     float:left;
 }
-.sous-menu_voyages .col-md-6 div {
+.sous-menu_voyages .col-md-6 div, .sous-menu_carnets .col-md-6 div {
     padding-left:20px;
 }
-.sous-menu_voyages .col-md-6 div a{
-    display: block;
+.sous-menu_carnets .col-md-6 div span {color:#FFF;font-size:17px;}
+
+.sous-menu_carnets .col-md-6 div span.auteur {font-style:italic;font-size:13px;margin:5px 0 25px;display:block;}
+
+.sous-menu_voyages .col-md-6 div a, .sous-menu_carnets .col-md-6 div a{
+  display: block;
   color: #282828;
   background: #ffbc2c;
   width: 160px;
   border-radius: 5px;
   height: 40px;
   line-height: 40px;
-   margin: 0 auto 20px;  
+  margin: 0 auto 20px;  
+  text-decoration:none;
 }
-.sous-menu_voyages .col-md-6 div a.galerie_nav {
+.sous-menu_voyages .col-md-6 div a.galerie_nav, .sous-menu_carnets .col-md-6 div a.galerie_nav {
     background:none;
     border:1px solid #ffbc2c;
     color:#FFF;
     margin:0 auto;
 }
 
-.sous-menu_voyages .col-md-4{
+.sous-menu_voyages .col-md-4, .sous-menu_carnets .col-md-4{
     background: #FFF;
     height:100%;
+    padding:25px 0 0 15px;
+    text-transform: uppercase;
 }
-.sous-menu_voyages .col-md-8 h2 {
+
+.sous-menu_voyages .col-md-4 h3, .sous-menu_carnets .col-md-4 h3 {
+    color:#ffbc2c;
+    font-size:25px;
+    font-weight: 500;
+}
+.sous-menu_voyages .col-md-4 p, .sous-menu_carnets .col-md-4 p {
+    width:290px;
+    height:110px;
+    padding: 8px 0 0 124px;
+    text-align:center;
+    display:block;
+    margin: 30px auto 0; 
+    color:#FFF;
+    font-size:14px;
+    text-transform:capitalize ;
+    line-height:18px;
+}
+
+.sous-menu_voyages .col-md-4 p .titre, .sous-menu_carnets .col-md-4 p .titre{
+    color:#ffbc2c;
+    text-transform: uppercase;
+}
+.sous-menu_voyages .col-md-4 p .auteur, .sous-menu_carnets .col-md-4 p .auteur {
+    font-style:italic;
+    font-size:13px;
+    text-transform:lowercase ;   
+}
+
+.sous-menu_voyages .col-md-4 p  a, .sous-menu_carnets .col-md-4 p  a {
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    color: #FFF;
+    width: 100px;
+    height: 25px;
+    line-height: 22px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.sous-menu_voyages .col-md-4 p a:hover, .sous-menu_carnets .col-md-4 p a:hover {
+    text-decoration:none;
+}
+.sous-menu_voyages .col-md-4 p.carnet01, .sous-menu_carnets .col-md-4 p.carnet01 {
+    background: #282828 url('../images/carnets_submenu_01.jpg') top left no-repeat;
+    
+}
+.sous-menu_voyages .col-md-4 p.carnet02, .sous-menu_carnets .col-md-4 p.carnet02 {
+    background: #282828 url('../images/carnets_submenu_02.jpg') top left no-repeat;
+    
+}
+
+.sous-menu_voyages .col-md-8 h2, .sous-menu_carnets .col-md-8 h2 {
     color:#FFFFFF;
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.sous-menu_voyages .col-md-8 h3{
+.sous-menu_voyages .col-md-8 h3, .sous-menu_carnets .col-md-8 h3{
     color:#CCC;
-    font-size:25px;
+    font-size: 22px;
     font-weight: 300;
-    margin: 0 0 10px 0;
+    margin: 0 0 25px 0;
 }
+
+.sous-menu_voyages .tous_voyages, .sous-menu_carnets .tous_voyages {
+  display: block;
+  color: #282828;
+  background: #FFF;
+  width: 230px;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+  margin: 50px auto 0 ;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
 /* Important styles */
 
 #toggle {
@@ -801,7 +897,7 @@ a.btn_galerie span {
     padding-top: 10px;
     display: none;
 }
-.inclus_vol .info_inclus.bloc_block {
+.inclus_vol:hover .info_inclus{
     display: block;
 }
 .tab-pane.vol p.mentions_avion {
@@ -2434,6 +2530,30 @@ footer .fa-search {
 }
 /* tablette et mobile */
 
+@media screen and (max-width:1375px) {
+    .sous-menu_voyages .col-md-6 img, .sous-menu_voyages .col-md-6 div {float:none;padding: 0;}
+    .sous-menu_voyages {height:500px;}
+    .sous-menu_voyages .tous_voyages {margin: 40px auto 0;}
+    .sous-menu_voyages .col-md-8 h3 {  margin: 10px 0 15px 0;}
+}
+@media screen and (max-width:1250px) {
+    .sous-menu_voyages .col-md-8, .sous-menu_carnets .col-md-8 {
+       padding: 48px 10px;
+    }   
+}
+
+@media screen and (max-width:1150px) {
+    /*.sous-menu_voyages .col-md-6, .sous-menu_carnets .col-md-6 {width:100%;}*/
+    .sous-menu_carnets {height: 410px;}
+    .sous-menu_voyages {height:500px}
+}
+@media screen and (max-width:1120px) {
+    .sous-menu_voyages .col-md-6 img, .sous-menu_carnets .col-md-6 img, 
+    .sous-menu_voyages .col-md-6 div, .sous-menu_carnets .col-md-6 div 
+    {float:none;}
+    .sous-menu_voyages, .sous-menu_carnets {height: 500px;}
+    .sous-menu_voyages .tous_voyages, .sous-menu_carnets .tous_voyages {  margin: 20px auto 0;}
+}
 @media screen and (max-width: 1199px) {
     .awe-btn.awe-btn-lager {
         font-size: 17px;
@@ -2566,6 +2686,33 @@ footer .fa-search {
     .actualites .btn_themes {
         padding: 30px 0 70px;
     }
+    .sous-menu_voyages .col-md-8, .sous-menu_carnets .col-md-8 {
+          width: 60%;
+        float: left;   
+    }
+    .sous-menu_voyages .col-md-4, .sous-menu_carnets .col-md-4 {
+        width:40%;
+        float:left;
+    }
+    .sous-menu_voyages .col-md-6 img, .sous-menu_carnets .col-md-6 img, 
+    .sous-menu_voyages .col-md-6 div, .sous-menu_carnets .col-md-6 div {
+        float:left;
+        display:block;
+    }
+    .sous-menu_carnets .col-md-6, .sous-menu_voyages .col-md-6 {
+          width: 100%;
+            display: block;
+            height: 200px;
+    }
+    .sous-menu_voyages .col-md-6 div {
+        padding:0 0 0 20px;
+    }
+    .sous-menu_voyages, .sous-menu_carnets {
+        height: 560px;
+      }
+      .sous-menu_voyages .tous_voyages, .sous-menu_carnets .tous_voyages {
+        margin: 0 auto 0;
+      }
 }
 @media screen and (max-width: 950px) {
     nav.navbar.mobile {
@@ -2613,6 +2760,7 @@ footer .fa-search {
     .thumnail-item .thumnail-text h4 {
         font-size: 15px
     }
+    .sub-menu {display:none;}
 }
 @media screen and (max-width: 840px) {
     .tab-pane.checklist {
