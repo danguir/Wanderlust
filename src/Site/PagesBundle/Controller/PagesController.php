@@ -36,4 +36,9 @@ class PagesController extends Controller
     {
         return $this->render('PagesBundle::valeur.html.twig');
     }
+    
+    public function checkoutDevisAction()
+    {
+        return $this->render('PagesBundle::checkout_devis.html.twig');
+    }
 }
