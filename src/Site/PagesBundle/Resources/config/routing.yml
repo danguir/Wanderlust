@@ -20,3 +20,7 @@ actualites_suite:
 valeur:
     path:     /valeur
     defaults: { _controller: PagesBundle:Pages:valeur}
+    
+checkout_devis:
+    path:     /checkout_devis
+    defaults: { _controller: PagesBundle:Pages:checkoutDevis}
