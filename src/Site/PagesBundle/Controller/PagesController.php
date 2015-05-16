@@ -41,4 +41,10 @@ class PagesController extends Controller
     {
         return $this->render('PagesBundle::checkout_devis.html.twig');
     }
+    
+    public function nosVoyagesAction()
+    {
+        return $this->render('PagesBundle::nos_voyages.html.twig');
+    }
+    
 }
