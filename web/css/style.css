@@ -116,6 +116,8 @@ header.headerfv {
     height: auto;
     max-height: 750px;
 }
+
+a:hover {text-decoration:none;}
 /* nav destkop */
 
 nav.navbar.desktop {
@@ -2619,10 +2621,128 @@ content: "";
         border-color: transparent;
 }
 
+/******* PAGE TOUS LES voyages ***********/
+#nos_voyages header {
 
+    height:480px;
+    display:block;
+    width:100%;
+    background: url('../images/bandeau_listevoyage.jpg') top left no-repeat;
+    background-size:100% 100%;
+    border-bottom: 2px solid #ffcb32;
+   
+}
+#nos_voyages .carousel-caption {
+    width: 260px;
+    height: 260px;
+}
 
+#nos_voyages .carousel-caption h1{
+    text-transform: uppercase;
+    font-size:32px;
+    font-size: 30px;
+    padding-top: 10px;
+}
 
-
+#nos_voyages .filtre_continents {
+    width:100%;
+    display:block;
+    background:#282828;
+    text-align:center;
+    line-height:0px;
+}
+    #nos_voyages .filtre_continents a {
+            color: #FFF;
+            font-family: "Lato";
+            font-size: 20px;
+            border: 1px solid #ffcb32;
+            border-radius: 5px;
+            margin: 0 20px;
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            line-height: 25px;
+            text-align: center;
+    }
+    #nos_voyages .filtre_continents a:hover, #nos_voyages .filtre_continents a:active {
+        text-decoration:none;
+    }
+    
+    #nos_voyages .voyages_destinations {
+      width:100%;
+      margin:0 auto;
+      padding: 0 0 60px 0;
+      min-height: 1060px;
+      height: auto;
+    }
+    
+    #nos_voyages .block_center {
+        width:1260px;
+        margin: 0 auto;
+    }
+    
+    #nos_voyages .nos_voyages {
+        width:340px;
+        height:254px;
+        position:relative;
+        overflow:hidden;
+        float:left;
+        margin:40px;
+    }
+    
+    #nos_voyages .nos_voyages img {
+        width:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:5;
+        height: 100%;
+    }
+    #nos_voyages .nos_voyages h4 {
+        position: relative;
+        top: 30px;
+        z-index: 8;
+        font-size: 2em;
+        color: #282828;
+        padding: 10px 10px;
+        background-color: rgba(255, 188, 44, 0.7);
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;   
+    }
+    
+    #nos_voyages .nos_voyages_hover {
+        width:100%;
+        height:254px;
+        position:absolute;
+        top: 254px;
+        left:0;
+        background-color: rgba(255, 188, 44, 0.7); 
+        z-index: 7;
+        color:#282828;
+        font-size:20px;
+        text-align:center;
+    }
+    
+    #nos_voyages .nos_voyages_hover span {
+        padding-top:80px;
+        display:block;
+    }
+    
+    #nos_voyages .nos_voyages_hover a
+    {  
+        color: #FFF;
+        font-size: 20px;
+        font-family: "Lato";
+        background: #282828;
+        width: 160px;
+        display: block;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        margin: 70px auto 0;
+        border-radius: 10px;
+    }
 /* //////////////////////////////        */
 
 
@@ -2733,6 +2853,14 @@ footer .fa-search {
     .sous-menu_voyages .tous_voyages {margin: 40px auto 0;}
     .sous-menu_voyages .col-md-8 h3 {  margin: 10px 0 15px 0;}
 }
+
+@media screen and (max-width:1280px) {
+    #nos_voyages .nos_voyages {margin:40px 20px;}
+    #nos_voyages .block_center {
+        width:1140px
+    }
+    
+}
 @media screen and (max-width:1250px) {
     .sous-menu_voyages .col-md-8, .sous-menu_carnets .col-md-8 {
         padding: 48px 10px;
@@ -2743,6 +2871,10 @@ footer .fa-search {
     /*.sous-menu_voyages .col-md-6, .sous-menu_carnets .col-md-6 {width:100%;}*/
     .sous-menu_carnets {height: 410px;}
     .sous-menu_voyages {height:500px}
+    #nos_voyages .nos_voyages {
+        margin: 40px 10px;
+    }
+    #nos_voyages .block_center {width: 1080px;}
 }
 @media screen and (max-width:1120px) {
     .sous-menu_voyages .col-md-6 img, .sous-menu_carnets .col-md-6 img, 
@@ -2832,6 +2964,12 @@ footer .fa-search {
     }
     /*.actualites {height: 1350px;}*/
 }
+
+@media screen and (max-width: 1100px) {
+    #nos_voyages .block_center  {width: 840px;}
+    #nos_voyages .nos_voyages {margin:40px}
+    
+}
 @media screen and (max-width: 1035px) {
     .carousel.slide i.fa-angle-down {
         left: 47%;
@@ -2871,6 +3009,9 @@ footer .fa-search {
         padding-top: 0;
     }
     /*.actualites {height: 1790px;}*/
+    #nos_voyages .nos_voyages_hover {top:0 !important; background-color: rgba(255, 255, 255, 0.3) !important;}
+    #nos_voyages .nos_voyages_hover span {display:none;}
+    #nos_voyages .nos_voyages_hover a {background:#282828;color:#ffcb23;  margin-top: 180px;}
 }
 @media screen and (max-width: 1000px) {
     .actualites .bloc_newsletter,
@@ -2958,7 +3099,23 @@ footer .fa-search {
         font-size: 15px
     }
     .sub-menu {display:none;}
+    
+    #nos_voyages .filtre_continents a {
+        margin: 10px;
+    }
+    #nos_voyages .filtre_continents {
+        height: auto;
+        padding: 20px 0;
+    }
 }
+
+@media screen and (max-width: 840px) {
+    #nos_voyages .nos_voyages {margin:20px 10px;}
+    #nos_voyages .block_center {
+        width: 720px;
+      }
+}
+
 @media screen and (max-width: 840px) {
     .tab-pane.checklist {
         width: 100%;
@@ -3056,7 +3213,22 @@ footer .fa-search {
     .thumnail-item .thumnail-text h4 {
         font-size: 15px
     }
+    #nos_voyages header {
+        height: 360px;
+    }
+    #nos_voyages .carousel-caption {
+        top: 21%;
+    }
+    footer .fleche_top {
+        top:-110px
+    }
 }
+
+@media screen and (max-width: 740px) {
+    #nos_voyages .block_center {width:340px;}
+    #nos_voyages .nos_voyages {margin:20px 0;}
+}
+
 @media screen and (max-width: 700px) {
     .date-depart {
         display: block;
@@ -3135,6 +3307,9 @@ footer .fa-search {
     .actualites .bloc_numerotation {
         height: 100px;
         line-height: 80px;
+    }
+    #nos_voyages .carousel-caption {
+        top: 21%;
     }
 }
 @media screen and (max-width: 480px) {
@@ -3309,5 +3484,9 @@ footer .fa-search {
         font-size: 16px;
         font-family: Georgia;
         font-style: italic
+    }
+    
+    #nos_voyages header {
+        height: 230px;
     }
 }
