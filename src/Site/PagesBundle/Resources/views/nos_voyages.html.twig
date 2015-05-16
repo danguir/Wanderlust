@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Wanderlust</title>
+
+    <!-- css-->
+    <!--<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/carousel.css" />-->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+
+    <!-- fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/modernizer.js') }}"></script>
+
+</head>
+
+
+<body>
+    <div id="page">
+        <div id="nos_voyages" class="">
+
+            <!-- faire un include de cette partie commune -->
+            <nav class="navbar navbar-fixed-top desktop">
+                <a href="#" class="logo"></a>
+                <ul>
+                    <li class="uppercase"><a href="{{ path('index') }}" class="no_bg">accueil</a>
+                    </li>
+                    <li class="uppercase submenu_voyage">
+                        <a href="#">voyages</a>
+                    </li>
+                    <li class="uppercase submenu_carnets"><a href="#">carnets de voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="{{ path('actualites') }}">actualités</a>
+                    </li>
+                    <li class="uppercase"><a href="#">contact</a>
+                    </li>
+                    <li class="uppercase"><a href="#" class="btn_connexion no_bg">connexion</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+
+            <nav class="navbar navbar-fixed-top mobile">
+                <a href="#menu" id="toggle"><span></span></a>
+                <div class="clearfix"></div>
+                <ul>
+                    <li class="uppercase"><a href="{{ path('index') }}" class="no_bg">accueil</a>
+                    </li>
+                    <li class="uppercase"><a href="#">voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="#">carnets de voyages</a>
+                    </li>
+                    <li class="uppercase"><a href="{{ path('actualites') }}">actualités</a>
+                    </li>
+                    <li class="uppercase"><a href="#">contact</a>
+                    </li>
+                    <li class="uppercase"><a href="#" class="btn_connexion no_bg">connexion</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+
+            <!-- sous menu hover voyage -->
+            <div class="sous-menu_voyages sub-menu">
+                <div class="col-md-8">
+                    <h2>NOS PROCHAINS VOYAGES</h2>
+                    <div class="col-md-6">
+                        <img src="{{ asset('images/vignette_ssmenu_01.jpg') }}" alt="" />
+                        <div>
+                            <h3>HIMALAYA</h3>
+                            <a href="#" class="fiche_voyage_nav">Fiche voyage</a>
+                            <a href="#" class="galerie_nav">Galerie</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{{ asset('images/vignette_ssmenu_02.jpg') }}" alt="" />
+                        <div>
+                            <h3>GROENLAND</h3>
+                            <a href="{{ path('fiches_voyage') }}" class="fiche_voyage_nav">Fiche voyage</a>
+
+                            <a href="#" class="galerie_nav">Galerie</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <a href="{{ path('nos_voyages') }}" class="tous_voyages"> voir tous nos voyages</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        La séléction<br/>
+                        Carnets de voyages du mois
+                    </h3>
+                    <p class="carnet01">
+                        <span class="titre">ARGENTINE</span><br/>
+                        "Le rêve absolue"<br/>
+                        <span class="auteur">Par Marion Laval</span><br/>
+                        <a href="#">Voir ce carnet</a>
+                    </p>
+                    <p class="carnet02">
+                        <span class="titre">MADAGASCAR</span><br/>
+                        "Un voyage innatendu"<br/>
+                        <span class="auteur">Par Marianne Levaux</span><br/>
+                        <a href="#">Voir ce carnet</a>
+                    </p>
+                </div>
+            </div>
+            <!-- fin sous menu hover voyage--> 
+
+            <!-- sous menu hover carnets -->
+            <div class="sous-menu_carnets sub-menu">
+                <div class="col-md-8 ">
+                    <h2>NOS CARNETS VOYAGES</h2>
+                    <div class="col-md-6">
+                        <img src="{{ asset('images/img_extrait_01.png') }}" alt="" />
+                        <div>
+                            <h3>MADAGASCAR</h3>
+                            <span>Retour aux sources</span><br/>
+                            <span class="auteur">Par Adam Tosco</span>
+                            <a href="#" class="fiche_voyage_nav">Voir le carnet</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{{ asset('images/img_extrait_02.png') }}" alt="" />
+                        <div>
+                            <h3>PÉROU</h3>
+                            <span>Un voyage parfait</span><br/>
+                            <span class="auteur">Par Eléonore Lefluve</span>
+                            <a href="#" class="fiche_voyage_nav">Voir le carnet</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <a href="#" class="tous_voyages"> voir tous nos carnets</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        La séléction<br/>
+                        Carnets de voyages du mois
+                    </h3>
+                    <p class="carnet01">
+                        <span class="titre">ARGENTINE</span><br/>
+                        "Le rêve absolue"<br/>
+                        <span class="auteur">Par Marion Laval</span><br/>
+                        <a href="#">Voir ce carnet</a>
+                    </p>
+                    <p class="carnet02">
+                        <span class="titre">MADAGASCAR</span><br/>
+                        "Un voyage innatendu"<br/>
+                        <span class="auteur">Par Marianne Levaux</span><br/>
+                        <a href="#">Voir ce carnet</a>
+                    </p>
+                </div>
+            </div>
+            <!-- fin sous menu hover carnets--> 
+            <!-- fin de la partie commune à mettre en include -->    
+
+
+            <header>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Nos voyages</h1>
+                    </div>
+                </div> 
+            </header>
+            <div class="clearfix"></div>
+            <section class="filtre_continents">
+                <a href="#">Tous</a>
+                <a href="#">Asie</a>
+                <a href="#">Afrique</a>
+                <a href="#">Amérique</a>
+                <a href="#">Europe</a>
+                <a href="#">Océanie</a>
+            </section>
+            
+            <section class="voyages_destinations">
+                <div class="block_center">
+                    <div class="nos_voyages">
+                        <img src="{{ asset('images/voyage_himalaya.jpg') }}" alt="" />
+                        <h4>Himalaya</h4>
+                        <span class="nos_voyages_hover">
+                            <span class="date_voyage">Du 15/08/15 au 27/08/15</span>
+                            <a href="#">Voir ce voyage</a>
+                        </span>
+                    </div>
+                    <div class="nos_voyages">
+                        <img src="{{ asset('images/voyage_sahara.jpg') }}" alt="" />
+                        <h4>Sahara</h4>
+                        <span class="nos_voyages_hover">
+                            <span class="date_voyage">Du 01/10/15 au 12/10/15</span>
+                            <a href="#">Voir ce voyage</a>
+                        </span>
+                    </div>
+                    <div class="nos_voyages">
+                        <img src="{{ asset('images/voyage_perou.jpg') }}" alt="" />
+                        <h4>Pérou</h4>
+                        <span class="nos_voyages_hover">
+                            <span class="date_voyage">Du 10/06/15 au 19/06/15</span>
+                            <a href="#">Voir ce voyage</a>
+                        </span>
+                    </div>
+                
+                    <div class="nos_voyages">
+                        <img src="{{ asset('images/voyage_australie.jpg') }}" alt="" />
+                        <h4>Australie</h4>
+                        <span class="nos_voyages_hover">
+                            <span class="date_voyage">Du 04/12/15 au 18/12/15</span>
+                            <a href="#">Voir ce voyage</a>
+                        </span>
+                    </div>
+                    <div class="nos_voyages">
+                        <img src="{{ asset('images/voyage_vietnam.jpg') }}" alt="" />
+                        <h4>Vietnam</h4>
+                        <span class="nos_voyages_hover">
+                            <span class="date_voyage">Du 12/04/15 au 21/04/15</span>
+                            <a href="#">Voir ce voyage</a>
+                        </span>
+                    </div>
+                    <div class="nos_voyages">
+                        <img src="{{ asset('images/voyage_madagascar.jpg') }}" alt="" />
+                        <h4>Madagascar</h4>
+                        <span class="nos_voyages_hover">
+                            <span class="date_voyage">Du 02/02/15 au 14/02/15</span>
+                            <a href="#">Voir ce voyage</a>
+                        </span>
+                    </div>
+               
+                    <div class="nos_voyages">
+                        <img src="{{ asset('images/voyage_tonga.jpg') }}" alt="" />
+                        <h4>Tonga</h4>
+                        <span class="nos_voyages_hover">
+                            <span class="date_voyage">Du 15/11/14 au 27/11/14</span>
+                            <a href="#">Voir ce voyage</a>
+                        </span>
+                    </div>
+                    <div class="nos_voyages">
+                        <img src="{{ asset('images/voyage_comores.jpg') }}" alt="" />
+                        <h4>Comores</h4>
+                        <span class="nos_voyages_hover">
+                            <span class="date_voyage">Du 06/10/14 au 28/10/14</span>
+                            <a href="#">Voir ce voyage</a>
+                        </span>
+                    </div>
+                    <div class="nos_voyages">
+                        <img src="{{ asset('images/voyage_scandinavie.jpg') }}" alt="" />
+                        <h4>Scandinavie</h4>
+                        <span class="nos_voyages_hover">
+                            <span class="date_voyage">Du 02/09/14 au 15/09/14</span>
+                            <a href="#">Voir ce voyage</a>
+                        </span>
+                    </div>
+                    <div class="clearfix"><div>
+                </div>
+            </section>
+
+
+
+
+
+            <!-- FOOTER -->
+
+
+            <div class="clearfix"></div>
+            <footer>
+                <a href="#" class="fleche_top"></a>
+                <ul class="footer_liens col-md-4 col-sm-3">
+                    <li><a href="#" class="uppercase white">accueil</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">voyages</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">carnets de voyages</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">actualité</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">contact</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">connexion</a>
+                    </li>
+                </ul>
+                <ul class="footer_liens col-md-4 col-sm-3">
+                    <li><a href="#" class="uppercase white">nos valeurs</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">nos conditions d'utilisation</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">mentions légales</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">politique</a>
+                    </li>
+                    <li><a href="#" class="uppercase white">presse</a>
+                    </li>
+                </ul>
+                <div class="col-md-4 col-xs-12 col-sm-3">
+                    <form class="newsletter_inscription">
+                        <h4 class="bold size_20 txt_yellow uppercase">
+                            suivez nos aventures
+                        </h4>
+                        <input type="text" class="newsletter_input" value="" placeholder="Entrez votre email" />
+                        <input type="submit" class="btn_inscription" value="S'inscrire" />
+                    </form>
+                    <div class="reseaux_sociaux">
+                        <a href="#" target="_blank" class="rs-link facebook">
+                            <img src="{{ asset('images/icone_facebook.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link twitter">
+                            <img src="{{ asset('images/icone_twitter.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link googleplus">
+                            <img src="{{ asset('images/icone_google.png') }}" alt="" />
+                        </a>
+                        <a href="#" target="_blank" class="rs-link youtube">
+                            <img src="{{ asset('images/icone_youtube.png') }}" alt="" />
+                        </a>
+                    </div>
+                    <img src="{{ asset('images/modepaiement.png') }}" alt="" class="mode_paiement" />
+                </div>
+                <div class="clearfix"></div>
+                <hr/>
+                <img src="{{ asset('images/logo_footer.png') }}" alt="" class="logo_footer" />
+                <span class="copyright uppercase white">
+                    &copy; wanderlust travel - 2015
+                </span>
+
+                <div class="clearfix"></div>
+            </footer>
+        </div>
+    </div>
+
+    <!--script-->
+
+    <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/scrollto.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+
+</body>
+
+</html>
