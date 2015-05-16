@@ -24,3 +24,7 @@ valeur:
 checkout_devis:
     path:     /checkout_devis
     defaults: { _controller: PagesBundle:Pages:checkoutDevis}
+    
+nos_voyages:
+ path:     /nos_voyages
+ defaults: { _controller: PagesBundle:Pages:nosVoyages}
